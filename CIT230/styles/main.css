@@ -9,6 +9,7 @@ body {
     line-height: 32px;
     font-family: 'Abel', sans-serif;
     color: #5e96ae; /* #xxxxxx */;
+    text-align: center;
 
 }
 
@@ -53,6 +54,7 @@ footer {
 }
 
 ul {
+    text-align: left;
     list-style-position: left;
     list-style-type: circle;
     margin: 0 auto;
