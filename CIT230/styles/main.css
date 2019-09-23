@@ -22,7 +22,7 @@ h1 {
 h2 {
     font-size: 2.0rem; /* x.xrem */;
     text-align: center;
-    border-bottom: .5px solid #bbb;
+    border-bottom: .5px solid whitesmoke;
 }
 
 header, main, footer {
