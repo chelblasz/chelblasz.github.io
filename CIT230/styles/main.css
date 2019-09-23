@@ -7,7 +7,7 @@
 body { 
     font-size: 16px; 
     line-height: 32px;
-    font-family: cursive; /* Ubuntu, sans-serif */;
+    font-family: 'Abel', sans-serif;
     color: #5e96ae; /* #xxxxxx */;
 
 }
@@ -19,7 +19,7 @@ h1 {
     
 }
 
-h2 {
+h4 {
     font-size: 2.0rem; /* x.xrem */;
     text-align: center;
     border-bottom: .5px solid whitesmoke;
