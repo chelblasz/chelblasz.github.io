@@ -17,14 +17,16 @@ h1 {
     font-size: 1.5rem /* x.xrem  (rem is a unit of measure) */;
     text-align: center;
     margin: 0.15rem;
-    color: #531839; 
+    color: #002947; 
     
 }
 
 h4 {
-    font-size: 1.0rem;
+    font-size: .5rem;
     text-align: center;
-    border-bottom: .5px solid whitesmoke;
+    text-shadow: 1px 1px 1px #fdb;
+    border-bottom: .5px solid #ffffff;
+   
 }
 
 header, main, footer {
@@ -35,8 +37,8 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
     background-color: #ceecef; /* */;
-    color: #989ca0;
-    /* Comment */
+    
+    
 }
 
 header img {
