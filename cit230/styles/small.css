@@ -41,9 +41,10 @@ header, footer, footer a {
     
 }
 
-header img {
-    width: auto;
-    height: auto;
+img {
+    max-width: 45%;
+    border-radius: 10%;
+
 }
 
 footer {
