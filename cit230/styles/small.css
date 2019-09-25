@@ -29,7 +29,6 @@ h4 {
 
 header, main, footer {
     margin: 1.25rem auto;
-    border-radius: 25px;
     padding: 1rem;
     max-width: 1000px; /* xxxpx (px = pixel is a unit of measure)  */;
 }
@@ -43,13 +42,10 @@ header, footer, footer a {
 header img {
     width: auto;
     height: auto;
-    float: right;
 }
 
-
-
 footer {
-    font-size: smaller; /* smaller */;
+    font-size: smaller;
     text-align: center;
 }
 
