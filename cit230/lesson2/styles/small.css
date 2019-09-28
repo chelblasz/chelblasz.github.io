@@ -1,14 +1,12 @@
 body {  
-    font-size: 16px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 45px;
     font-family: 'Abel', sans-serif;
     color: #5e96ae; 
+    text-align:center; 
 } 
 
-p {
-    display: inline-block;
-    vertical-align: middle;
-    text-align:center; 
+p { 
     background-color: #ffffff;
     width: 700px;
     border: 2px solid #002947;
@@ -16,9 +14,8 @@ p {
     margin: 20px;
 }
 
-h1 {
-    
-    font-size: 1.5rem ;
+h1 { 
+    font-size: 3rem ;
     text-align: center;
     margin: 0.15rem;
     color: #002947; 
@@ -27,7 +24,8 @@ h1 {
 
 
 img {
-    
+    vertical-align: text-bottom;
+    float: inline-start;
     padding: 50px;
     margin-left: 100px; 
     max-width: 200px;
