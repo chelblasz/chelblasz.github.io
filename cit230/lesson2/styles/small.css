@@ -1,9 +1,12 @@
+
+
 body {  
     font-size: 30px;
     line-height: 45px;
     font-family: 'Abel', sans-serif;
-    color: #5e96ae; 
-    text-align:center; 
+    color: hsl(198, 48%, 45%); 
+    text-align:center;
+    background: #d8f2ff 
 } 
 
 p { 
@@ -15,6 +18,7 @@ p {
 }
 
 h1 { 
+    vertical-align: text-bottom;
     font-size: 3rem ;
     text-align: center;
     margin: 0.15rem;
@@ -24,11 +28,9 @@ h1 {
 
 
 img {
-    vertical-align: text-bottom;
-    float: inline-start;
-    padding: 50px;
-    margin-left: 100px; 
-    max-width: 200px;
+    align: center;
+    padding: 50px; 
+    max-width: 300rem;
 } 
 
 
