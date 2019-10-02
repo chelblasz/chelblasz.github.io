@@ -2,23 +2,28 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
-body { 
-    font-size: 16px; 
+body {
+    font-size: 16px;
     line-height: 32px;
     font-family: 'Abel', sans-serif;
-    color: #5e96ae; 
+    color: #5e96ae;
     text-align: center;
 
 }
 
 h1 {
-    font-size: 1.5rem /* x.xrem  (rem is a unit of measure) */;
+    font-size: 1.5rem
+        /* x.xrem  (rem is a unit of measure) */
+    ;
     text-align: center;
     margin: 0.15rem;
-    color: #002947; 
-    
+    color: #002947;
+
 }
 
 h4 {
@@ -26,19 +31,28 @@ h4 {
     text-align: center;
     text-shadow: 1px 1px 1px #fdb;
     border-bottom: .5px solid #ffffff;
-   
+
 }
 
-header, main, footer {
+header,
+main,
+footer {
     margin: 1.25rem auto;
     padding: 1rem;
-    max-width: 1000px; /* xxxpx (px = pixel is a unit of measure)  */;
+    max-width: 1000px;
+    /* xxxpx (px = pixel is a unit of measure)  */
+    ;
 }
-header, footer, footer a {
+
+header,
+footer,
+footer a {
     text-align: center;
-    background-color: #ceecef; /* */;
-    
-    
+    background-color: #ceecef;
+    /* */
+    ;
+
+
 }
 
 img {
