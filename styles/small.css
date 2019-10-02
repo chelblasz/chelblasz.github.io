@@ -1,0 +1,50 @@
+/*html selectors least specific*/
+li {
+    float: left;
+    /* margin: 10; */
+    margin: 0 5rem 10px 20px;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.5em;
+    line-height: 2em;  
+
+}
+
+li a {
+    color: #6c5b7b;
+
+}
+
+/* class selectors second most specific*/
+.highlight {
+    font-weight: bold;
+}
+
+/* id selectors most specific
+#active {
+    background-color: aquamarine;
+} */
+
+body {
+    height: 40em;
+    background: linear-gradient(to bottom, #ffffff 2%, #8dbdd8 100%);
+    text-align: center;
+}
+
+h1 {
+    vertical-align: text-bottom;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+    color: #355c7d;
+    padding-top: 4rem;
+}
+
+h5 {
+    vertical-align: text-bottom;
+    font-size: .9rem;
+    text-align: center;
+    margin: 0.15rem;
+    color: #355c7d;
+    padding: 2rem;
+}
