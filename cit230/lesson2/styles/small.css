@@ -33,5 +33,8 @@ img {
     max-width: 300rem;
 } 
 
+li a {
+    text-decoration: none
+}
 
 
