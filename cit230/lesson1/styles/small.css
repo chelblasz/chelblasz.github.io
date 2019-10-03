@@ -1,12 +1,4 @@
-/* CIT 230 - Assignment Portal CSS Template */
-/* You may use #HEX or color names */
-
-/* * is a wildcard referring to all elements. */
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
+@media only screen and (min-device-width : 16em) and (max-device-width : 24em) {}
 
 
 li a {
