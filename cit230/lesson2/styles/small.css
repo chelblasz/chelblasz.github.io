@@ -9,6 +9,15 @@ body {
     background: #d8f2ff 
 } 
 
+nav {
+    margin: 1em;
+    background-color: #e0ebf1;
+    color: black;
+    border-radius: 20%;
+    max-width: 5em;
+    padding: .1em;
+  }
+  
 p { 
     background-color: #ffffff;
     width: 700px;

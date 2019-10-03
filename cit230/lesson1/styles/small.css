@@ -1,6 +1,10 @@
 @media only screen and (min-device-width : 16em) and (max-device-width : 24em) {}
 
 
+html {
+    height: 100%;
+}
+
 body {
     font-size: 16px;
     line-height: 32px;
@@ -11,10 +15,17 @@ body {
 }
 
 nav {
-  background-color: #f1f1f1;
+  margin: 1em;
+  background-color: #e0ebf1;
   color: black;
-  border-radius: 50%;
+  border-radius: 20%;
+  max-width: 5em;
+  padding: .1em;
 }
+
+a:visited {
+    color: black;
+  }
 
 li a {
     text-decoration: none;
@@ -38,9 +49,10 @@ h1 {
 
 }
 
-h4 {
+h2 {
     text-align: center;
     color: #002947;
+    font-size: .5rem; 
 } 
 
 header, footer {
@@ -71,5 +83,5 @@ ul {
     color: #595959;
 }
 a:hover {
-    color: #002947;
+    color: #ffffff;
 }
