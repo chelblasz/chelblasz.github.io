@@ -11,13 +11,14 @@ body {
 
 nav {
     margin: 1em;
-    background-color: #e0ebf1;
+    background-color: rgb(250, 239, 239);
     color: black;
     border-radius: 20%;
     max-width: 5em;
-    padding: .1em;
+    /* padding: .1em; */
+    font-size: .5em;
   }
-  
+
 p { 
     background-color: #ffffff;
     width: 700px;
@@ -37,7 +38,7 @@ h1 {
 
 
 img {
-    align: center;
+    /* align: center; */
     padding: 50px; 
     max-width: 300rem;
 } 
