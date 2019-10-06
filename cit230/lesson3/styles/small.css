@@ -21,3 +21,23 @@ li a {
 #active {
     background-color: aquamarine;
 }
+img {
+    max-height: 3em;
+    max-width: 4em;
+    display: inline-flex;
+}
+h1 {
+    display: inline-flex;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
