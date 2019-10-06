@@ -41,3 +41,10 @@ h1 {
   background: #ddd;
   color: black;
 }
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ceeaf7;
+    padding: 7px 0px;
+}
