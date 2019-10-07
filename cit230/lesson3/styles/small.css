@@ -21,6 +21,10 @@ li a {
 #active {
     background-color: aquamarine;
 }
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 img {
     max-height: 3em;
     max-width: 4em;

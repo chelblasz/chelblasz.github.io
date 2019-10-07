@@ -75,7 +75,7 @@ footer {
 }
 
 ul {
-    float: center;
+    display: flex
     list-style-position: center;
     list-style-type: none;
     margin: 0 auto;
