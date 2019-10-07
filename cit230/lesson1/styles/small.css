@@ -41,6 +41,10 @@ li {
 
 }
 
+a:hover {
+    color: #ffffff;
+}
+
 h1 {
     font-size: 1rem;
     text-align: center;
@@ -81,7 +85,4 @@ ul {
     margin: 0 auto;
     max-width: 300px;
     color: #595959;
-}
-a:hover {
-    color: #ffffff;
 }

@@ -1,61 +1,72 @@
-h1 { 
+h1 {
     display: flex;
     justify-content: center;
-}
-
-
-/*html selectors least specific*/
-li {
-    float: left;
-    /* margin: 10; */
-    margin: 0 5px 10px 20px;
-    list-style: none;
-    padding-left: 0;
-
-}
-
-li a {
-    text-decoration: none
-}
-
-/* class selectors second most specific*/
-.highlight {
-    font-weight: bold;
-}
-
-/* id selectors most specific*/
-#active {
-    background-color: aquamarine;
 }
 
 body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
 img {
-    max-height: 3em;
-    max-width: 4em;
-    display: inline-flex;
+    max-height: 6em;
+    max-width: 6em;
+    display: flex;
     justify-content: flex-start;
-}
-h1 {
-    display: inline-flex;
-}
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
+    padding: 1% 1%;
 }
 
-.navbar a:hover {
-  background: #ddd;
-  color: black;
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+ /* li {
+    float: left;
+    margin: 0 5px 10px 20px;988
+    list-style: none;
+    padding-left: 0;
+} */
+
+/*navigation bar and text*/
 ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #ceeaf7;
     padding: 7px 0px;
+
+}
+
+/* navigation settings */
+nav {
+    overflow: hidden;
+    background-color: #5f7d99;
+    /* display: grid;
+    grid-template-columns: 20% 80%; */
+    /* position: fixed; */
+    /* top: 0; */
+    width: 100%;
+}
+a:visited {
+    color: black;
+}
+
+/* no underlines or bullets for link list */
+li a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #ffffff;
+}
+
+li {
+    list-style: none;
+    padding-left: 0;
+    text-align: justify;
+    padding-bottom: 0em;
+    text-decoration: none;
+
 }
