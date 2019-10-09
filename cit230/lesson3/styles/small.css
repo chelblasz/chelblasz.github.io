@@ -1,86 +1,92 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
-@media screen and (min-width: 360px){ 
+
+@media screen and (min-width: 22.5em) {
 
 
-header {
-    background-color: #5f7d99;
-    margin-bottom:0;
-}
+    header {
+        background-color: #5f7d99;
+        margin-bottom: 0;
+    }
 
-body {
-    font-family: 'Montserrat Alternates', sans-serif;
-}
+    body {
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
 
-img {
-    max-height: 6em;
-    max-width: 6em;
-    display: flex;
-    justify-content: flex-start;
-    padding: 1% 1%;
-}
+    img {
+        max-height: 6em;
+        max-width: 6em;
+        display: flex;
+        justify-content: flex-start;
+        padding: 1% 1%;
+    }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -2em;
-    margin-bottom: 3em;
-}
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -2em;
+        margin-bottom: 3em;
+    }
 
- /* li {
-    float: left;
-    margin: 0 5px 10px 20px;988
-    list-style: none;
-    padding-left: 0;
-} */
+    /*navigation bar and text*/
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #ceeaf7;
+        padding: 7px 0px;
+        margin-top: 0;
+        margin-bottom: 0;
 
-/*navigation bar and text*/
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #ceeaf7;
-    padding: 7px 0px;
-    margin-top: 0;
-    margin-bottom: 0;
+    }
 
-}
+    /* navigation settings */
+    nav {
+        overflow: hidden;
+        background-color: #5f7d99;
+        margin: 0;
+        margin-top: -3em;
+        margin-bottom: 5em;
 
-/* navigation settings */
-nav {
-    overflow: hidden;
-    background-color: #5f7d99;
-    margin: 0;
-    margin-top: -3em;
-    margin-bottom: 5em;
-}
-}
-a:visited {
-    color: black;
-}
+    }
 
-/* no underlines or bullets for link list */
-li a {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    color: #ffffff;
-}
+    .navigation li: :first-child {
+        display: block;
+    }
 
-li {
-    list-style: none;
-    padding-left: 0;
-    text-align: justify;
-    padding-bottom: 0em;
-    text-decoration: none;
+    .responsive li {
+        display: block;
+    }
 
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+
+    a:visited {
+        color: black;
+    }
+
+    /* no underlines or bullets for link list */
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: #ffffff;
+    }
+
+    li {
+        list-style: none;
+        padding-left: 0;
+        text-align: justify;
+        padding-bottom: 0em;
+        text-decoration: none;
+
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }

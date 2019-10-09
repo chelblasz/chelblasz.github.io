@@ -7,22 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tiny Tot Weather</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
-    <!-- <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css"> -->
 </head>
 
 <body>
     <header>
        <img src="/cit230/lesson3/images/weatherlogo.png" alt="Weather Logo">
-        <!-- <img src="/cit230/lesson3/images/giraffe.png" alt="logo pic 1">
-        <img src="/cit230/lesson3/images/penguin.png" alt="logo pic 3">
-        <img src="/cit230/lesson3/images/moose.png" alt="logo pic 2"> -->
         <h1>Weather 4 Tots</h1>
         
         <nav>
                 <!-- <a href="/index.html" class="previous round">&#8249; Back</a> -->
-            <ul>
+                <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()"> Menu</a></li>
                 <li><a href="/cit230/lesson3/index.html" class="active">Home Page</a></li>
                 <li><a href="/cit230/lesson3/styles/target-audience.html">Target Audience</a></li>
                 <li><a href="/cit230/lesson3/styles/color-scheme.html">Color-Scheme</a></li>
@@ -35,6 +33,7 @@
             <p>&copy; <span id="currentYear"></span> &star; Chelsea Blaszczyk &star; Idaho &star; <a
                     href="http://www.byui.edu" target="_blank">BYU-Idaho</a></p>
         </footer>
+        <script src="../lesson4/scripts/main.js"></script>
         <script src="../lesson1/scripts/currentdate.js"></script>
 </body>
 

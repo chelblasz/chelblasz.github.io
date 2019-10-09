@@ -1,4 +1,11 @@
-@media screen and (min-width: 700px){ 
+@media screen and (min-width: 45em){ 
 
+    .navigation li:first-child {
+        display: none !important;
+    }
+    .navigation li: {
+        display: block;
+        flex: 1 1 100%;
+    }
     
 }
