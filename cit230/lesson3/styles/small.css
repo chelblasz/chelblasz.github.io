@@ -43,7 +43,7 @@
     /* navigation settings */
     nav {
         overflow: hidden;
-        background-color: #5f7d99;
+        background-color: aqua);
         margin: 0;
         margin-top: -3em;
         margin-bottom: 5em;
@@ -88,5 +88,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        background-color: aqua;
+
     }
 }
