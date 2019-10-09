@@ -1,11 +1,25 @@
-@media screen and (min-width: 45em){ 
+@media screen and (min-width: 40em){ 
+
+    h1 {
+        font-size: 10em;
+    }
+
+    img {
+        max-height: 10em;
+        max-width: 10em;
+       
+    }
 
     .navigation li:first-child {
         display: none !important;
     }
-    .navigation li: {
+    .navigation li {
         display: block;
         flex: 1 1 100%;
+    }
+
+    ul {
+        flex-direction: row;
     }
     
 }
