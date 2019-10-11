@@ -1,6 +1,4 @@
-function toggleMenu(){
-    
-}
+
 var currentDateString;
 
 var currentDate = new Date();
@@ -11,7 +9,7 @@ var daysOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","S
 
 var weekDay = daysOfWeek[weekDayDate];
 
-currentDateString = weekDay + ", "
+currentDateString = weekDay + ", ";
 
 currentDateString += currentDate.getDate();
 //get name of the month
@@ -21,8 +19,12 @@ var monthNumber = currentDate.getMonth();
 
 var month = months[monthNumber];
 
-currentDateString += " " + month
+currentDateString += " " + month;
 
 currentDateString += " " + currentDate.getFullYear();
 
-document.getElementById("currentDate").innerHTML = currentDateString
+document.getElementById("currentDate").innerHTML = currentDateString;
+
+function toggleMenu(){
+    
+}

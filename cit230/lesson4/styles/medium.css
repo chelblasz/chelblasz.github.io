@@ -1,0 +1,39 @@
+@media screen and (min-width: 40em){ 
+
+    h1 {
+        font-size: 5em;
+    }
+
+    img {
+        max-height: 10em;
+        max-width: 10em;
+       
+    }
+
+    .navigation li:first-child {
+        display: none !important;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+    
+
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: rgb(194, 194, 194);
+	}
+}
