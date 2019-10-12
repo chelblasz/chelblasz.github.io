@@ -69,6 +69,12 @@ header {
         background-color: #000;
         display: block;
     }
+
+    nav {
+        margin: 0 auto;
+        max-width: 760px;
+        background-color: #000;
+    }
     .navigation {
         list-style: none;
         text-align: center;
@@ -77,11 +83,14 @@ header {
     .navigation li:first-child {
         display: block;
     }
+    /* this is where I need help!!!!!!!!!! */
+
     .navigation li {
         display: none;
         display: flex;
         align-items: flex-start; 
     }
+
     .navigation a {
         display: block;
         color: #fff;
@@ -93,10 +102,10 @@ header {
         color: #000;
         background-color: #fff;
         font-weight: 700;
-    }
 
+    }
+    
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
