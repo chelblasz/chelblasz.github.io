@@ -1,4 +1,3 @@
-
 var currentDateString;
 
 var currentDate = new Date();
@@ -25,6 +24,6 @@ currentDateString += " " + currentDate.getFullYear();
 
 document.getElementById("currentDate").innerHTML = currentDateString;
 
-function toggleMenu(){
-    
+function toggleMenu() {
+	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }

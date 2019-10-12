@@ -18,6 +18,9 @@
         flex: 1 1 100%;
     }
 
+    .responsive li {
+        display: block;
+    }
     ul {
         flex-direction: row;
     }

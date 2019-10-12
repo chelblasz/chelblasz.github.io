@@ -11,7 +11,7 @@
     }
 
     .navigation li:first-child {
-        display: none !important;
+        display: none;
     }
     .navigation li {
         display: block;
@@ -21,18 +21,20 @@
     ul {
         flex-direction: row;
     }
-    
 
 	.navigation {
 		display: flex;
-	}
+    }
+    
 	.navigation li:first-child {
 		display: none;
-	}
+    }
+    
 	.navigation li {
 		display: block;
 		flex: 1 1 100%;
-	}
+    }
+    
 	.navigation li a {
 		color: rgb(194, 194, 194);
 	}

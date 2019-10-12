@@ -1,62 +1,62 @@
-    /*navigation bar and text*/
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        background-color: #ceeaf7;
-        padding: 7px 0px;
-        margin-top: 0;
-        margin-bottom: 0;
+ /*navigation bar and text*/
+ ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ceeaf7;
+    padding: 7px 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 
-    }
+}
 
-    /* navigation settings */
-    nav {
-        overflow: hidden;
-        background-color: aqua;
-        margin: 0;
-        margin-top: -3em;
-        margin-bottom: 5em;
+/* navigation settings */
+nav {
+    overflow: hidden;
+    background-color: aqua;
+    margin: 0;
+    margin-top: -3em;
+    margin-bottom: 5em;
 
-    }
+}
 
-    .navigation li: :first-child {
-        display: block;
-    }
+.navigation li: :first-child {
+    display: block;
+}
 
-    .responsive li {
-        display: block;
-    }
+.responsive li {
+    display: block;
+}
 
 
-    a:visited {
-        color: black;
-    }
+a:visited {
+    color: black;
+}
 
-    /* no underlines or bullets for link list */
-    li a {
-        text-decoration: none;
-        color: black;
-    }
+/* no underlines or bullets for link list */
+li a {
+    text-decoration: none;
+    color: black;
+}
 
-    a:hover {
-        color: #ffffff;
-    }
+a:hover {
+    color: #ffffff;
+}
 
-    li {
-        list-style: none;
-        padding-left: 0;
-        text-align: justify;
-        padding-bottom: 0em;
-        text-decoration: none;
+li {
+    list-style: none;
+    padding-left: 0;
+    text-align: justify;
+    padding-bottom: 0em;
+    text-decoration: none;
 
-    }
+}
 
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: aqua;
-    }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}

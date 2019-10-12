@@ -6,34 +6,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Preston Weather Page</title>
-        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="../lesson4/styles/normalize.css">
+        <link rel="stylesheet" href="../lesson4/styles/medium.css">
+        <link rel="stylesheet" href="../lesson4/styles/responsive.css">
         <link rel="stylesheet" href="/cit230/lesson1/scripts/currentdate.js">
-        <!-- <link rel="stylesheet" href="scripts/togglemenu.js">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/medium.css"> -->
-        <link rel="stylesheet" href="styles/responsive.css">
-        <link rel="stylesheet" href="styles/medium.css">
 </head>
 
 <body>
+        <header id="header-background"> 
+        <img src="../lesson4/images/hitchhikers.png" alt="logo">             
+        <h1>Little Hitch-Hikers</h1>
+        <div>Keep our favorite little hitch-hikers warm and safe</div>
+        </header>
+
         <header>
-                <h1>Weather 4 Tots</h1>
-                <h2>Preston home Page</h2>
                 <nav>
-                        <!-- <a href="/index.html" class="previous round">&#8249; Back</a> -->
                         <ul class="navigation">
-                                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                                <li><a href="#" class="active">Home Page</a></li>
-                                <li><a href="#">Hourly Forecast</a></li>
-                                <li><a href="#">Daily Forecast</a></li>
-                                <li><a href="#">Weekly Forecast</a></li>
+                            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                            <li><a href="#">Home Page</a></li>
+                            <li><a href="#">Preston</a></li>
+                            <li><a href="#">Soda Springs</a></li>
+                            <li><a href="#">Fish Haven</a></li>
+                            <li><a href="#">Storm Center</a></li>
+                            <li><a href="#">Gallery</a></li>
                         </ul>
                 </nav>
         </header>
+        <main>
+                <h2>Preston Idaho</h2>
+                <div class ="contentbox">Weather Summery</div>
+                <div class ="contentbox forecast"> 5 Day Forecast</div>
+                <div class ="contentbox">Article</div>
+                <div class ="contentbox">Contact Information</div>
+        </main>
         <footer>
                 <p>&copy; <span id="currentDate"></span> &star; Chelsea Blaszczyk &star;</p>
         </footer>
-        <script src="../lesson4/scripts/main.js"></script>
-</body>
+        <script src="../lesson4/scripts/datetoggle.js"></script>
+        </body>
 
-</html>
+        </html>
