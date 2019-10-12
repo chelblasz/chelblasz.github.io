@@ -1,13 +1,33 @@
-@media screen and (min-width: 40em){ 
+@media screen and (min-width: 421px){ 
 
-    h1 {
-        font-size: 5em;
-    }
-
-    img {
-        max-height: 10em;
-        max-width: 10em;
+        header h1 {
+            font-size: 2.5em;
+           
+        } 
+        header div {
+            font-size: 1em;
+            
+        }
        
+        h1 img {
+            max-width: 120px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: black;
+        }
+        
+        .contentbox {
+            max-width: 250px;
+            font-size: 1.2em;
+        }
+    
+        
+    
+    footer {
+        background-color: rgb(179, 212, 212);
+        font-size: 11px;
     }
 
     .navigation li:first-child {
