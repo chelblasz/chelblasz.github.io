@@ -13,7 +13,11 @@
             max-width: 120px;
         }
 
-       
+        h2 {
+            margin: 16px;
+            font-size: 2.75em;
+            color: black;
+        }
         
         .contentbox {
             max-width: 250px;
