@@ -14,10 +14,14 @@ header {
         background-color: rgb(255, 255, 255);
     }
 
-    h1 img {
-        max-width: 75px;
-        padding: 1% 1%;
-        border-radius: 30%;
+    .image {
+        /* border-radius: 50%;
+        max-width: 1px; */
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        
+ 
     }
 
    h1 {

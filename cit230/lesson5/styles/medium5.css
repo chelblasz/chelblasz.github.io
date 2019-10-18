@@ -1,0 +1,94 @@
+@media screen and (min-width: 650px) {
+
+
+    iframe {
+        padding: 20px 20px;
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+    }
+
+    .forecast,
+    .forecast h3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 70px;
+    }
+    .flex-head>div>img {
+        border-radius: 100px;
+        max-width: 200px;
+        /* display: inline; */
+    }
+
+    /* little hitch-hikers */
+h1 {
+    font-size: 1em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 0;
+    text-shadow: 0px 0px 20px white;
+
+}
+/* sub heading */
+.sub-header {
+    display: inline;
+    font size: 12px;
+    font: bold;
+}
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .hamburger a {
+        display: none;
+    }
+
+
+    .contentbox {
+        max-width: 250px;
+        font-size: 1.2em;
+    }
+
+
+
+    footer {
+        background-color: rgb(179, 212, 212);
+        font-size: 11px;
+    }
+
+
+    .navigation li:first-child {
+        display: none !important;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 18px;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: rgb(194, 194, 194);
+    }
+}

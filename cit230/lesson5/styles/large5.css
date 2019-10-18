@@ -1,0 +1,55 @@
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 3em;
+       
+    } 
+    h1 div {
+        font size: 36px;
+        text-align: center;
+    }
+    .contentbox {
+        max-width: 325px;
+        font-size: 30px;
+    }
+
+    header div {
+        font-size: 1em;
+
+        
+    }
+
+    /* idaho mountains */
+
+.hero-image {
+    background-position: center center;
+}
+
+    .flex-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 img {
+        max-width: 200px;
+    }
+
+    .navigation li {
+    font-size: 24px; 
+    }
+
+
+
+footer {
+    background-color: rgb(179, 212, 212);
+    font-size: 15px;
+}
+
+footer p {
+    text-align: center;
+    align-self: flex-end;
+    margin-left: 45%;    
+    }
+
+
+}
