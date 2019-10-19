@@ -21,36 +21,43 @@
                         <img id="boots" src="../lesson5/images/hitchhikers.png" alt="logo">
                 </div>
                 <div>
-                        <h1>Little Hitch-Hikers</h1>
+                        <h1><span>Little Hitch-Hikers</span></h1>
                         <div class="sub-header">Keeping our favorite little hitch-hikers warm and safe</div>
                 </div>
         </header>
 
-
-        <div class="hamburger">
-                <a href="#" onclick="toggleMenu()">&#9776;
-                        Menu</a>
-        </div>
         <nav>
-                <ul class="navigation">
-                        <li><a href="#">Home Page</a></li>
-                        <li><a href="../lesson4/preston-4.html">Preston</a></li>
-                        <li><a href="#">Soda Springs</a></li>
-                        <li><a href="#">Fish Haven</a></li>
-                        <li><a href="#">Storm Center</a></li>
-                        <li><a href="#">Gallery</a></li>
-                </ul>
+
+                <div class="hamburger">
+                        <a href="#" onclick="toggleMenu()">&#9776;Menu</a>
+                        <label for="menulist">&#9776;menu</label>
+                        <input type="checkbox" id="menulist">
+
+                        <ul class="navigation">
+                                <li><a href="#">Home Page</a></li>
+                                <li><a href="../lesson4/preston-4.html">Preston</a></li>
+                                <li><a href="#">Soda Springs</a></li>
+                                <li><a href="#">Fish Haven</a></li>
+                                <li><a href="#">Storm Center</a></li>
+                                <li><a href="#">Gallery</a></li>
+                        </ul>
+                </div>
         </nav>
 
         <main class="body-content">
                 <section class="hero-image">
                         <h2><span>Preston Idaho</span></h2>
-                        <section id="pancake" class="hidden">
-                               <p> 
-                                       There is pancakes in the park on Friday!
-                                </p>
-                        </section>
                 </section>
+
+                <section id="pancake" class="hidden">
+                        <p>
+                                There are pancakes in the park on Friday!
+                        </p>
+                </section>
+
+
+                <section class="weather">weather</section>
+
 
                 <section class="forecast">
                         <h3>High Temperature Forecast</h3>
@@ -74,11 +81,23 @@
                         </table>
                 </section>
 
-                <section class="article">Article</section>
-                <section class="contact">Contact Information</section>
+                <section class="article">Warning
+                        <p>
+                                There are big storms coming this weekend especially on the west side of Targee.
+                                We advise staying inside with your little ones and venturing out next weekend.
+                                If you are caught in the storm and need assistance call 1-800-parents.
+                        </p>
+                </section>
+
+                <section class="contact">Contact Information
+                        <p>
+                                Chels Black news Weather Woman
+                                1 (800)-555-8765
+                        </p>
                 </section>
 
         </main>
+
         <footer>
                 <p>&copy; <span id="currentDate"></span> &star; Chelsea Blaszczyk &star;</p>
 
@@ -86,8 +105,9 @@
                         width="200" height="200" style="border:0;"></iframe>
 
         </footer>
+
         <script src="scripts/main.js"></script>
-        <script src="scripts/menu.js"></script>
+        <!-- <script src="scripts/menu.js"></script> -->
 </body>
 
 </html>

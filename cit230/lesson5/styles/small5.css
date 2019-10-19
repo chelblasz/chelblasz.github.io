@@ -6,6 +6,16 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+
+/* space around the body content */
+.body-content {
+    padding: 30px;
+    }
+
+
+/* Header
+__________________________________________________________________________________________________________________________ */
+
 .flex-head {
     display: flex;
     flex-direction: column;
@@ -14,15 +24,186 @@ body {
 
 }
 
-.flex-head>div>img {
+#boots {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+/* little hitch-hikers */
+h1 span {
+    display: none;
+}
+
+.sub-header {
+    display: none;
+}
+
+
+/* .flex-head>div>img {
     border-radius: 100px;
     max-width: 200px;
     display: flex;
     align-content: flex-start;
     justify-content: flex-start;
     z-index: -1;
+} */
+
+/* Nav
+_________________________________________________________________________________________________________________________*/
+/* 
+
+#menulist:checked ~ .navigation{
+    display: block;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+} */
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+
 }
 
+/* .navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: none;
+
+}
+
+.navigation a {
+    display: block;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation li {
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+
+} */
+
+
+/* Main Body Content
+________________________________________________________________________________________________________ */
+
+/* idaho mountains */
+.hero-image {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-image: url("../images/idahomountains.jpg");
+    background-position: center bottom;
+}
+
+/* preston idaho */
+h2 span {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1em;
+    color: black;
+}
+
+#pancake {
+    display: flex;
+    justify-content: center;
+}
+
+.weather  {
+    display: block;
+    margin: 18px auto;
+    border: 1px dashed rgba(88, 26, 34, 0.822);
+    padding: 15px;
+    background-color: rgb(238, 237, 236);
+    max-width: 650px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* 5 day forecast */
+.forecast,
+.forecast h3 {
+    display: none;
+    /* margin: 18px auto;
+    border: 1px dashed rgba(88, 26, 34, 0.822);
+    padding: 15px;
+    background-color: rgb(238, 237, 236);
+    max-width: 650px;
+    text-align: center;
+    font-size: 12px; */
+}
+
+.article {
+    display: block;
+    margin: 18px auto;
+    border: 1px dashed rgba(88, 26, 34, 0.822);
+    padding: 15px;
+    background-color: rgb(238, 237, 236);
+    max-width: 650px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.contact {
+    display: block;
+    margin: 18px auto;
+    border: 1px dashed rgba(88, 26, 34, 0.822);
+    padding: 15px;
+    background-color: rgb(238, 237, 236);
+    max-width: 650px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/* content weather summary, 5day, blh */
+.contentbox {
+    display: block;
+    margin: 18px auto;
+    border: 1px dashed rgba(88, 26, 34, 0.822);
+    padding: 15px;
+    background-color: rgb(238, 237, 236);
+    max-width: 650px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.responsive {
+    display: contents;
+}
+
+main {
+    padding: 100px;
+}
+
+/* footer
+_________________________________________________________________________________________ */
 footer {
     bottom: 0;
     width: 100%;
@@ -39,122 +220,8 @@ footer p {
     margin-left: 30%;
 }
 
-/* little hitch-hikers */
-h1 {
-    display: none;
-
-}
-
-.sub-header {
-    display: none;
-}
-
-/* preston idaho */
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    font-size: 2em;
-    color: black;
-}
-
-/* idaho mountains */
-
-.hero-image {
-    position: relative;
-    height: 200px;
-    background-size: cover;
-    background-image: url("../images/idahomountains.jpg");
-    background-position: center bottom;
-}
-
 /* map */
 iframe {
     display: none;
 }
-
-/* 5 day forecast */
-.forecast,
-.forecast h3 {
-    display: none;
-}
-
-/* space around the body content for the 4 content boxes */
-.body-content {
-padding: 30px;
-}
-
-/* content weather summary, 5day, blh */
-.contentbox {
-    display: block;
-    margin: 18px auto;
-    border: 1px dashed rgba(88, 26, 34, 0.822);
-    padding: 15px;
-    background-color: rgb(238, 237, 236);
-    max-width: 150px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.responsive {
-    display: contents;
-}
-main {
-    padding: 100px;
-}
-
-body ul {
-    margin: 0 auto;
-    max-width: 100%;
-    background-color: #000;
-    display: block;
-}
-
-
-/* this is where I need help!!!!!!!!!! */
-
-nav {
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: #000;
-
-}
-
-.navigation {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    display: none;
-
-}
-
-.hamburger a {
-    display: block;
-    max-width: 100%;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* .navigation li {
-    display: flex;
-    align-items: flex-start;
-} */
-
-.navigation a {
-    display: block;
-    color: #fff;
-    padding: 0.75rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    color: #000;
-    background-color: #fff;
-    font-weight: 700;
-
-}
-
 
