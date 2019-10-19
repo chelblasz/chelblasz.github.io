@@ -6,13 +6,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-
-/* space around the body content */
-.body-content {
-    padding: 30px;
-    }
-
-
 /* Header
 __________________________________________________________________________________________________________________________ */
 
@@ -113,8 +106,9 @@ ________________________________________________________________________________
 
 /* idaho mountains */
 .hero-image {
-    position: relative;
-    height: 200px;
+    /* position: relative; */
+    max-width: 100%;
+    height: 250px;
     background-size: cover;
     background-image: url("../images/idahomountains.jpg");
     background-position: center bottom;
@@ -178,28 +172,6 @@ h2 span {
     max-width: 650px;
     text-align: center;
     font-size: 12px;
-}
-
-
-
-/* content weather summary, 5day, blh */
-.contentbox {
-    display: block;
-    margin: 18px auto;
-    border: 1px dashed rgba(88, 26, 34, 0.822);
-    padding: 15px;
-    background-color: rgb(238, 237, 236);
-    max-width: 650px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.responsive {
-    display: contents;
-}
-
-main {
-    padding: 100px;
 }
 
 /* footer
