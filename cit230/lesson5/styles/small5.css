@@ -10,21 +10,24 @@ body {
 __________________________________________________________________________________________________________________________ */
 
 .logoheader {
-    display: flex;
-    align-content: flex-start;
+    display: inline;
+    vertical-align: middle;
+    margin-bottom: 0.75em;
+    /* display: flex;
+    align-content: flex-start; */
     /* justify-content: start; */
 }
 
 /* little hitch-hikers */
 #logo {
-    width: 200px;
+    /* width: 200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; */
 }
 
 .sub-header {
-    font-size: 1em;
-    color: black;
+    /* font-size: 1em;
+    color: black; */
 }
 
 /* Nav
@@ -47,7 +50,7 @@ nav {
 
 }
 
-/* .navigation {
+.navigation {
     list-style: none;
     text-align: center;
     padding: 0;
@@ -83,7 +86,7 @@ nav {
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
-}*/
+}
 
 .navigation a:hover {
     color: #000;
