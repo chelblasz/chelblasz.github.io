@@ -1,94 +1,153 @@
 @media screen and (min-width: 700px) {
 
+/* Header
+__________________________________________________________________________________________________________________________ */
 
-    iframe {
-        padding: 20px 20px;
-        margin-left: auto;
-        margin-right: 0;
-        display: block;
-    }
-
-    .forecast,
-    .forecast h3 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding: 70px;
-    }
-    .flex-head>div>img {
-        border-radius: 100px;
-        max-width: 200px;
-        /* display: inline; */
-    }
-
-    /* little hitch-hikers */
-h1 {
-    font-size: 1em;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    border-radius: 0;
-    text-shadow: 0px 0px 20px white;
-
+/* little hitch-hikers */
+#logo {
+    width: 350px;
 }
-/* sub heading */
+
 .sub-header {
-    display: inline;
-    font size: 12px;
-    font: bold;
+    font-size: 30px;
+
 }
 
-    h2 {
-        font-size: 2.5em;
-    }
+/* Nav
+__________________________________________________________________________________________________________________________*/
+.navigation li:first-child {
+    display: none !important;
+}
 
-    .hamburger a {
-        display: none;
-    }
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation a {
+    display: block;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation li a {
+    color: rgb(194, 194, 194);
+}
+
+/* .navigation li {
+    display: flex;
+    align-items: center;
+} */
+
+/* .navigation a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+} */
+/* 
+.navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+
+} */
+
+/* 
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+    font-size: 18px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+} 
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+
+}
 
 
-    .contentbox {
-        max-width: 250px;
-        font-size: 1.2em;
-    }
+ */
 
 
+/* Main Body Content
+______________________________________________________________________________________________________________________________ */
 
-    footer {
-        background-color: rgb(179, 212, 212);
-        font-size: 11px;
-    }
+/* preston idaho */
+h2 span {
+    font-size: 2em;
+}
+
+#pancake {
+    font-size: 24px;
+}
+
+.weather  {
+    max-width: 650px;
+    font-size: 20px;
+}
+
+/* 5 day forecast */
+.forecast,
+.forecast h3 {
+    display: flex;
+    justify-content: center;
+    margin: 18px auto;
+    border: 1px dashed rgba(88, 26, 34, 0.822);
+    padding: 15px;
+    background-color: rgb(238, 237, 236);
+    max-width: 650px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.article {
+    max-width: 650px;
+    font-size: 20px;
+}
+
+.contact {
+    max-width: 650px;
+    font-size: 20px;
+}
+
+/* footer
+____________________________________________________________________________________________________________________________________ */
+footer {
+    background-color: rgb(167, 231, 231);
+    font-size: 10px;
+}
+
+footer p {
+    background-color: rgb(179, 212, 212);
+    font-size: 12px;
+}
+
+/* map */
+iframe {
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+}
 
 
-    .navigation li:first-child {
-        display: none !important;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-        font-size: 18px;
-    }
-
-    ul {
-        flex-direction: row;
-    }
-
-    .navigation {
-        display: flex;
-    }
-
-    .navigation li:first-child {
-        display: none;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-
-    .navigation li a {
-        color: rgb(194, 194, 194);
-    }
 }

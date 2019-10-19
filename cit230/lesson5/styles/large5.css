@@ -1,55 +1,40 @@
-@media screen and (min-width: 900px) {
-    h1 {
-        font-size: 3em;
-       
-    } 
-    h1 div {
-        font size: 36px;
-        text-align: center;
-    }
-    .contentbox {
-        max-width: 325px;
-        font-size: 30px;
-    }
+@media screen and (min-width: 1000px) {
+    
+    /* Header
+__________________________________________________________________________________________ */
 
-    header div {
-        font-size: 1em;
-
-        
-    }
-
-    /* idaho mountains */
-
-.hero-image {
-    background-position: center center;
+/* little hitch-hikers */
+#logo {
+    width: 380px;
 }
 
-    .flex-head {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    h1 img {
-        max-width: 200px;
-    }
+.sub-header {
+    font-size: 35px;
 
-    .navigation li {
-    font-size: 24px; 
-    }
+}
+
+/* Nav
+_________________________________________________________________________________________*/
+
+.navigation li a {
+    color: rgb(255, 255, 255);
+}
 
 
+/* Main Body Content
+_________________________________________________________________________________________ */
 
+
+/* footer
+_________________________________________________________________________________________ */
 footer {
-    background-color: rgb(179, 212, 212);
-    font-size: 15px;
+    font-size: 12px;
 }
 
 footer p {
-    text-align: center;
-    align-self: flex-end;
-    margin-left: 45%;    
-    }
-
-
+    background-color: rgb(114, 195, 195);
+    font-size: 18px;
 }
+
+    
+}   
