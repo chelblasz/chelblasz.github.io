@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles/medium6.css">
         <link rel="stylesheet" href="styles/large6.css">
         <link rel="shortcut icon" href="images/favicon48.png" type="image/x-icon">
-        <link rel="stylesheet" href="images/prestonhero.jpg">
+        <!-- <link rel="stylesheet" href="images/prestonhero.jpg"> -->
 </head>
 
 <body>
@@ -44,15 +44,22 @@
         <main class="body-content">
                 <section class="hero-image">
                         <h2><span>Preston Idaho</span></h2>
+                        <picture>
+                            <source srcset="images/mountainssmall.jpg" media="(min-width:400px) and (max-width:799px)">
+                            <source srcset="images/mountainslarge.jpg" media="(min-width:800px)">
+                            <img src="../lesson6/images/idahomountains.jpg" alt="Idaho Mountains">
+                     </picture>
+
                 </section>
+
+
 
                 <section id="pancake" class="hidden">
                         <p>
                                 Saturday = pancakes in the park!
                         </p>
                 </section>
-
-
+                
                 <section class="weather">
                        
                         

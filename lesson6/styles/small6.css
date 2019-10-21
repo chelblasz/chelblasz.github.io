@@ -89,14 +89,20 @@ ________________________________________________________________________________
 
 /* idaho mountains */
 .hero-image {
-    position: relative;
-    max-width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-image: url("../images/idahomountains.jpg");
-    background-position: center bottom;
+    /* position: relative; */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    /* max-width: 100%; */
+    /* background-size: cover; */
+    /* height: 250px; */
+    /* background-image: url("../images/idahomountains.jpg"); */
+    /* background-position: center bottom; */
 }
-
+picture img{
+    width: 100%;
+    
+}
 /* preston idaho */
 h2 span {
     display: flex;
