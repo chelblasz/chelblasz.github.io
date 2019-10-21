@@ -32,16 +32,6 @@ ________________________________________________________________________________
 
 /* Nav
 _________________________________________________________________________________________________________________________*/
-/* 
-
-#menulist:checked ~ .navigation{
-    display: block;
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-} */
 
 nav {
     max-width: 100%;
@@ -54,8 +44,6 @@ nav {
     list-style: none;
     text-align: center;
     padding: 0;
-    display: none;
-
 }
 
 .navigation a {
@@ -67,13 +55,13 @@ nav {
     text-align: center;
 }
 
- .hamburger {
+ /* .hamburger {
     list-style: none;
     text-align: center;
     padding: 0;
     display: none;
 
-}
+} */
 
 .navigation li {
     display: flex;
