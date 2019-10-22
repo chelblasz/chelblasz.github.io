@@ -3,102 +3,91 @@
     /* Header
     __________________________________________________________________________________________________________________________ */
     
+    .alignment {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        vertical-align: middle;
+        align-items: center;
+        padding: 40px;
+        margin: -80px;
+        
+    }
+
     /* little hitch-hikers */
     #logo {
         width: 250px;
+        border-radius: 10px;
     }
-    
+
     .sub-header {
-        font-size: 30px;
-    
+        display: inherit;
+        font-size: 16px;
+        border-radius: 10px;
     }
     
     /* Nav
     __________________________________________________________________________________________________________________________*/
-    .navigation oncli {
-        display: none !important;
-    }
-    
-    ul {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .navigation a {
+    .checkbox-container {
         display: block;
         width: 100%;
-        background-color: #000;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
+        height: 50px;
+        position: absolute;
+        background: #000000;
     }
     
-    .navigation li a {
-        color: rgb(194, 194, 194);
+    .menu-content {
+        /* display: flex;
+        flex-direction: row; */
+        background: #242424;
+        color: white;
+        float: left;
+        height: 50px;
     }
     
-    /* .navigation li {
+    /* .menu-content ul {
         display: flex;
-        align-items: center;
-    } */
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 0;
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.3s ease 0.7s, width 0.7s ease; 
+    }*/
     
-    /* .navigation a {
-        display: block;
-        color: #fff;
-        padding: 0.75rem;
-        text-align: center;
-        text-decoration: none;
-    } */
-    /* 
-    .navigation a:hover {
-        color: #000;
-        background-color: #fff;
-        font-weight: 700;
-    
-    } */
-    
-    /* 
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-        font-size: 18px;
-    }
-    
-    .navigation {
+    .menu-content ul li {
         display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        cursor: pointer;
+        transition: color 0.5s, background 0.5s;
     }
     
-    .navigation li:first-child {
-        display: none;
+    .menu-content ul li:hover {
+        color: #0CD6AD;
+        background: rgb(10, 99, 105);
     }
     
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    } 
-    
-    nav {
-        max-width: 100%;
-        margin: 0 auto;
-        background-color: #000;
-    
+    .hamburger-menu {
+        display: table-row;
     }
-    
-    
-     */
-    
     
     /* Main Body Content
     ______________________________________________________________________________________________________________________________ */
     
     /* preston idaho */
     h2 span {
+        position: relative;
         font-size: 2em;
     }
     
-    #pancake {
+    /* #pancake {
         font-size: 24px;
-    }
+    } */
     
     .weather  {
         max-width: 650px;
@@ -134,10 +123,10 @@
     footer {
         background-color: rgb(167, 231, 231);
         font-size: 10px;
+        width: 100%;
     }
     
     footer p {
-        background-color: rgb(179, 212, 212);
         font-size: 12px;
     }
     

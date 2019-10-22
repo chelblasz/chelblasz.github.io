@@ -3,20 +3,15 @@
 
 body {
     font-family: 'Montserrat Alternates', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-image: url("../images/ominous.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+      }
 }
 
 /* Header
 __________________________________________________________________________________________________________________________ */
-
-.logoheader {
-    display: inline;
-    vertical-align: middle;
-    margin-bottom: 0.75em;
-    /* display: flex;
-    align-content: flex-start; */
-    /* justify-content: start; */
-}
 
 /* little hitch-hikers */
 #logo {
@@ -26,83 +21,147 @@ ________________________________________________________________________________
 }
 
 .sub-header {
-    /* font-size: 1em;
-    color: black; */
+   display: none;
 }
 
 /* Nav
 _________________________________________________________________________________________________________________________*/
-
-nav {
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: #000;
-
-}
-
-.navigation {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-.navigation a {
+.checkbox-container {
     display: block;
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    float: left;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: #182825;
 }
 
- /* .hamburger {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    display: none;
-
-} */
-
-.navigation li {
+.menu-content {
     display: flex;
-    align-items: center;
+    background: #182825;
+    color: white;
+    float: left;
 }
 
-.navigation a {
+.menu-content ul {
     display: block;
-    color: #fff;
-    padding: 0.75rem;
-    text-align: center;
-    text-decoration: none;
+    padding-left: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease 0.7s, width 0.7s ease;
 }
 
-.navigation a:hover {
-    color: #000;
-    background-color: #fff;
-    font-weight: 700;
-
+.menu-content ul li {
+    list-style: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    cursor: pointer;
+    transition: color 0.5s, background 0.5s;
 }
 
+.menu-content ul li:hover {
+    color: #0CD6AD;
+    background: #1E332F;
+}
+
+/* style the hamburger trigger */
+
+.checkbox-trigger {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.hamburger-menu,
+.hamburger-menu::before,
+.hamburger-menu::after {
+    display: block;
+    position: absolute;
+    background: white;
+    width: 40px;
+    height: 4px;
+    margin: 1.3em 3em;
+    transition: background 0.3s;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after {
+    content: '';
+    position: absolute;
+    margin: -0.7em 0 0;
+    transition: width 0.7s ease 0.3s, transform 0.7s ease 0.3s;
+}
+
+.hamburger-menu::after {
+    margin-top: 0.7em;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-top: 1.45em;
+    margin-right: 0.35em;
+    margin-left: 0.35em;
+    margin-bottom: 1.45em;
+    transition: width 0.3s ease;
+}
+
+/* core CSS to toggle the hamburger menu */
+.checkbox-trigger:checked {
+    left: 202px;
+}
+
+.checkbox-trigger:checked+.menu-content .hamburger-menu {
+    width: 2em;
+    transition: width 0.7s ease 0.7s;
+}
+
+.checkbox-trigger:checked+.menu-content .hamburger-menu::before {
+    width: 1.2em;
+    transform: rotate(-35deg);
+    margin-top: -0.4em;
+}
+
+.checkbox-trigger:checked+.menu-content .hamburger-menu::after {
+    width: 1.2em;
+    transform: rotate(35deg);
+    margin-top: 0.4em;
+}
+
+.checkbox-trigger:checked+.menu-content ul {
+    width: 200px;
+    height: 200px;
+    transition: width 0.7s ease 0.3s, height 0.3s ease;
+}
 
 /* Main Body Content
 ________________________________________________________________________________________________________ */
 
 /* idaho mountains */
 .hero-image {
-    /* position: relative; */
+    position: relative;
     display: block;
     margin: 0 auto;
-    text-align: center;
-    /* max-width: 100%; */
-    /* background-size: cover; */
+    width: 100%;
+    background-size: cover;
     /* height: 250px; */
     /* background-image: url("../images/idahomountains.jpg"); */
     /* background-position: center bottom; */
 }
-picture img{
+
+picture img {
     width: 100%;
-    
+
 }
+
 /* preston idaho */
 h2 span {
     display: flex;
@@ -117,7 +176,7 @@ h2 span {
     justify-content: center;
 }
 
-.weather  {
+.weather {
     display: block;
     margin: 18px auto;
     border: 1px dashed rgba(88, 26, 34, 0.822);
@@ -171,7 +230,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    background-color: rgb(218, 247, 247);
+    background-color: rgb(255, 255, 255);
     font-size: 8px;
 }
 
@@ -185,4 +244,3 @@ footer p {
 iframe {
     display: none;
 }
-
