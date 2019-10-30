@@ -100,9 +100,17 @@ h2 span {
     color: black;
 }
 
-#pancake {
-    display: flex;
-    justify-content: center;
+#pancakes {
+    background-color: rgb(0, 157, 230);
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-size:1em;
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
 }
 
 .weather  {

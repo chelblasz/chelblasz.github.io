@@ -48,6 +48,7 @@ element.innerHTML = daysOfWeek[currentDay];
 }
 
 //show hide pancake
-if(weekDayDate === 5) {
-    document.getElementById("pancake").removeAttribute("hidden");
+
+if(daysOfWeek[currentDate.getDay] === "Friday") {
+    document.getElementById("pancakes").classList.remove("hidden");
 }
