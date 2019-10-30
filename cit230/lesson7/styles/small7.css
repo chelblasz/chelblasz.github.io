@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: black;
+	  }
+	  
+#gallery {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-content: center;
+}
+
+.pic {
+	width: 200px;
+	padding: 10px;
+	margin: 0;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
+/* _____________________NAV_____________________ */
+
+nav {
+	max-width: 100%;
+	overflow: hidden;
+	background-color: rgb(17, 18, 20);
+}
+
+.navbar-logo {
+	display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: rgb(230, 154, 154);
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(66, 38, 50);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.responsive li {
+	display: block;
+}
+
+
+/* ___________________Media Query for medium + screens___________________________ */
+
+@media only screen and (min-width: 32.5em) {
+	
+	#gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.pic {
+		width: 300px;
+	}
+	
+
+/* _________________________________NAV______________________________________ */
+
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: #ffffff;
+	}
+}
+
+/* _______________________Media Query for medium + screens_____________________ */
+
+@media only screen and (min-width: 60em) {
+
+	#gallery {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.pic {
+		width: 380px;
+
+	}
+
+}

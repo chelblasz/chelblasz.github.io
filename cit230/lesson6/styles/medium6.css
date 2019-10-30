@@ -14,15 +14,15 @@
     }
 
     /* little hitch-hikers */
-    #logo {
+     #logo {
         width: 250px;
         border-radius: 10px;
     }
 
     .sub-header {
-        display: inherit;
+        display: inline-flex;
         font-size: 16px;
-        border-radius: 10px;
+
     }
     
     /* Nav
@@ -80,7 +80,7 @@
     ______________________________________________________________________________________________________________________________ */
     
     /* preston idaho */
-    h2 span {
+    .city {
         position: relative;
         font-size: 2em;
     }

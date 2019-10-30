@@ -3,36 +3,35 @@
 
 body {
     font-family: 'Montserrat Alternates', sans-serif;
-    background-image: url("../images/ominous.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    border: black;
       }
-}
-
+    
 /* Header
 __________________________________________________________________________________________________________________________ */
 
 /* little hitch-hikers */
 #logo {
-    /* width: 200px;
-    display: flex;
-    flex-direction: row; */
+    /* max-width: 200%; */
+    display: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .sub-header {
    display: none;
 }
 
+
 /* Nav
 _________________________________________________________________________________________________________________________*/
 .checkbox-container {
     display: block;
     float: left;
-    width: 50px;
+    width: 100%;
     height: 50px;
     position: relative;
     background: #182825;
+    z-index: 1;
 }
 
 .menu-content {
@@ -40,6 +39,7 @@ ________________________________________________________________________________
     background: #182825;
     color: white;
     float: left;
+
 }
 
 .menu-content ul {
@@ -52,6 +52,7 @@ ________________________________________________________________________________
     height: 0px;
     overflow: hidden;
     transition: height 0.3s ease 0.7s, width 0.7s ease;
+   
 }
 
 .menu-content ul li {
@@ -60,11 +61,13 @@ ________________________________________________________________________________
     padding-bottom: 1em;
     cursor: pointer;
     transition: color 0.5s, background 0.5s;
+    
 }
 
 .menu-content ul li:hover {
     color: #0CD6AD;
     background: #1E332F;
+   
 }
 
 /* style the hamburger trigger */
@@ -77,6 +80,7 @@ ________________________________________________________________________________
     left: 0px;
     cursor: pointer;
     z-index: 5;
+   
 }
 
 .hamburger-menu,
@@ -89,6 +93,7 @@ ________________________________________________________________________________
     height: 4px;
     margin: 1.3em 3em;
     transition: background 0.3s;
+   
 }
 
 .hamburger-menu::before,
@@ -97,6 +102,7 @@ ________________________________________________________________________________
     position: absolute;
     margin: -0.7em 0 0;
     transition: width 0.7s ease 0.3s, transform 0.7s ease 0.3s;
+   
 }
 
 .hamburger-menu::after {
@@ -149,26 +155,28 @@ ________________________________________________________________________________
 .hero-image {
     position: relative;
     display: block;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 100%;
     background-size: cover;
-    /* height: 250px; */
+    /* z-index: -1; */
+    height: 1000px;
     /* background-image: url("../images/idahomountains.jpg"); */
     /* background-position: center bottom; */
 }
 
-picture img {
+/* picture img {
     width: 100%;
 
-}
+} */
 
 /* preston idaho */
-h2 span {
+.city {
     display: flex;
+    align-content: inherit;
     justify-content: center;
-    align-items: baseline;
-    font-size: 1em;
+    font-size: 18px;
     color: black;
+    z-index: 1;
 }
 
 #pancake {
@@ -176,8 +184,26 @@ h2 span {
     justify-content: center;
 }
 
-.weather {
-    display: block;
+.container {
+    position: relative;
+
+  }
+  
+  /* Bottom right text */
+  .weather {
+    position: absolute;
+    top: 267px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    padding: .5px 10px;
+    font-size: 10px;  
+    max-width: 150px;  
+
+  } 
+   
+   
+    /* display: block;
     margin: 18px auto;
     border: 1px dashed rgba(88, 26, 34, 0.822);
     padding: 15px;
@@ -185,7 +211,7 @@ h2 span {
     max-width: 650px;
     text-align: center;
     font-size: 12px;
-}
+} */
 
 /* 5 day forecast */
 .forecast,
