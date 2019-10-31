@@ -58,24 +58,26 @@
                                 </picture> -->
                             </div>
                             <h2 class="city">Preston Idaho</h2>
+                            <div id=weatherSummary>
+                                    <h3 id="summary">Weather Summary</h3>
+                                    <p>
+                                        <span>Current Temperature: </span>
+                                        <span id="currentTemp"></span>
+                                    </p>
+                                    <p>
+                                        <span>Windchill: </span>
+                                        <span id="windChill"></span>
+                                    </p>
+                                    <p>
+                                        <span>Wind Speed: </span>
+                                        <span id="windSpeed"></span>
+                                    </p>
+                                </div>
                         </section>
 
                         <div id="pancake" class="hidden">
                             <p>Saturday = pancakes in the park!</p>
-                        </div>
-
-
-                        <section class="container">
-                            <div class="weather">
-                                <h2>Daily Weather Summary</h2>
-                                <p>Currently: Light rain Showers</p>
-                                <p>High: 32&deg;F</p>
-                                <p>Wind Chill: 50&deg;F</p>
-                                <p>Humidity: 10%</p>
-                                <p>Wind Speed: 46mph</p>
-                            </div>
-                        </section>
-
+                        </div>            
 
                         <section class="forecast">
                             <h3>High Temperature Forecast</h3>
@@ -129,6 +131,7 @@
 
                     <script src="scripts/main.js"></script>
                     <script src="scripts/maindate.js"></script>
+                    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

@@ -55,10 +55,12 @@
         font-size: 24px;
     } */
     
-    .weather  {
-        max-width: 650px;
-        font-size: 20px;
-    }
+    #weatherSummary {
+        top: 400px;
+        right: 30px;
+        padding: 10px 10px;
+        font-size: 20px; 
+      } 
     
     /* 5 day forecast */
     .forecast,
