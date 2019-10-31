@@ -16,7 +16,7 @@
 
 <body>
 
-    <header class="logoheader">
+    <header class="logo-header">
         <section>
             <img id="logo" src="images/treelogo.png" alt="logo">
             <p><span class="sub-header">Keeping our favorite little hitch-hikers warm and safe</span</p> </section>
@@ -34,13 +34,28 @@
 
                     <main class="body-content">
                         <section class="hero-image">
+                            <!-- <img srcset="images/smallhero1-320w.jpg 320w,
+                                         images/mediumhero1-480w.jpg 480w,
+                                         images/largehero1-800w.jpg 800w" 
+                                 sizes="(max-width: 320px) 280px,
+                                        (max-width: 480px) 440px,
+                                         800px" 
+                                 src="images/smallhero1.jpg" alt="ugly-hero"> -->
+
+                            <!-- <img src="images/smallhero1.jpg" srcset="images/largehero1.jpg, images/mediumhero1.jpg, images/smallhero1.jpg" id="hero-img"> -->
+                            <!-- <img src="images/mountainssmall.jpg" srcset="images/idahomountains.jpg 1200w, images/mountainslarge.jpg 800w, images/mountainssmall.jpg 400w" id="hero-img"> -->
                             <div>
-                                <picture>
+                                <picture class="ugly_hero">
+                                    <source  class="ugly_hero" srcset="images/largehero1.jpg" media="(min-width: 1000px)">
+                                    <source  class="ugly_hero" srcset="images/mediumhero1.jpg" media="(min-width:800px)">
+                                    <img  class="ugly_hero" src="images/smallhero1.jpg" alt="ugly-hero">
+                                </picture>
+                                <!-- <picture>
                                     <source srcset="images/mountainssmall.jpg"
                                         media="(min-width:100px) and (max-width:799px)">
                                     <source srcset="images/mountainslarge.jpg" media="(min-width:800px)">
                                     <img src="../lesson6/images/idahomountains.jpg" alt="Idaho Mountains">
-                                </picture>
+                                </picture> -->
                             </div>
                             <h2 class="city">Preston Idaho</h2>
                         </section>
