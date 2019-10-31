@@ -1,151 +1,77 @@
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
 
 
 body {
     font-family: 'Montserrat Alternates', sans-serif;
-    border: black;
-      }
-    
+    background-color: rgb(255, 255, 255);
+}
+
 /* Header
 __________________________________________________________________________________________________________________________ */
 
+.logoheader {
+        display: absolute;
+        top: 20px;
+        left: 20px;
+}
+
 /* little hitch-hikers */
 #logo {
-    /* max-width: 200%; */
-    display: absolute;
-    top: 20px;
-    left: 20px;
+    /* width: 200px;
+    display: flex;
+    flex-direction: row; */
 }
 
 .sub-header {
-   display: none;
+    font-size: .75em;
+    color: black;
 }
 
+/* _____________________NAV_____________________ */
 
-/* Nav
-_________________________________________________________________________________________________________________________*/
-.checkbox-container {
-    display: block;
-    float: left;
-    width: 100%;
-    height: 50px;
-    position: relative;
-    background: #182825;
-    z-index: 1;
+nav {
+	max-width: 100%;
+	overflow: hidden;
+	background-color: rgb(17, 18, 20);
 }
 
-.menu-content {
-    display: flex;
-    background: #182825;
-    color: white;
-    float: left;
-
+.navbar-logo {
+	display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
 }
 
-.menu-content ul {
-    display: block;
-    padding-left: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin: 0;
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-    transition: height 0.3s ease 0.7s, width 0.7s ease;
-   
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: rgb(230, 154, 154);
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(66, 38, 50);
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.menu-content ul li {
-    list-style: none;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    cursor: pointer;
-    transition: color 0.5s, background 0.5s;
-    
-}
-
-.menu-content ul li:hover {
-    color: #0CD6AD;
-    background: #1E332F;
-   
-}
-
-/* style the hamburger trigger */
-
-.checkbox-trigger {
-    opacity: 0;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 0px;
-    cursor: pointer;
-    z-index: 5;
-   
-}
-
-.hamburger-menu,
-.hamburger-menu::before,
-.hamburger-menu::after {
-    display: block;
-    position: absolute;
-    background: white;
-    width: 40px;
-    height: 4px;
-    margin: 1.3em 3em;
-    transition: background 0.3s;
-   
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after {
-    content: '';
-    position: absolute;
-    margin: -0.7em 0 0;
-    transition: width 0.7s ease 0.3s, transform 0.7s ease 0.3s;
-   
-}
-
-.hamburger-menu::after {
-    margin-top: 0.7em;
-}
-
-.hamburger-menu {
-    position: relative;
-    display: block;
-    margin: 0;
-    margin-top: 1.45em;
-    margin-right: 0.35em;
-    margin-left: 0.35em;
-    margin-bottom: 1.45em;
-    transition: width 0.3s ease;
-}
-
-/* core CSS to toggle the hamburger menu */
-.checkbox-trigger:checked {
-    left: 202px;
-}
-
-.checkbox-trigger:checked+.menu-content .hamburger-menu {
-    width: 2em;
-    transition: width 0.7s ease 0.7s;
-}
-
-.checkbox-trigger:checked+.menu-content .hamburger-menu::before {
-    width: 1.2em;
-    transform: rotate(-35deg);
-    margin-top: -0.4em;
-}
-
-.checkbox-trigger:checked+.menu-content .hamburger-menu::after {
-    width: 1.2em;
-    transform: rotate(35deg);
-    margin-top: 0.4em;
-}
-
-.checkbox-trigger:checked+.menu-content ul {
-    width: 200px;
-    height: 200px;
-    transition: width 0.7s ease 0.3s, height 0.3s ease;
+.responsive li {
+	display: block;
 }
 
 /* Main Body Content
@@ -155,28 +81,18 @@ ________________________________________________________________________________
 .hero-image {
     position: relative;
     display: block;
-    /* margin: 0 auto; */
     width: 100%;
     background-size: cover;
-    /* z-index: -1; */
     height: 1000px;
-    /* background-image: url("../images/idahomountains.jpg"); */
-    /* background-position: center bottom; */
 }
-
-/* picture img {
-    width: 100%;
-
-} */
 
 /* preston idaho */
 .city {
     display: flex;
-    align-content: inherit;
     justify-content: center;
-    font-size: 18px;
+    align-items: center;
+    font-size: 1em;
     color: black;
-    z-index: 1;
 }
 
 #pancake {
@@ -184,11 +100,22 @@ ________________________________________________________________________________
     justify-content: center;
 }
 
+.hidden{
+    display: none;
+}
+
 .container {
     position: relative;
+    background-color: rgb(0, 157, 230);
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-size:1em;
+    font-weight: 700;
+}
 
-  }
-  
+
+
   /* Bottom right text */
   .weather {
     position: absolute;
@@ -201,17 +128,7 @@ ________________________________________________________________________________
     max-width: 150px;  
 
   } 
-   
-   
-    /* display: block;
-    margin: 18px auto;
-    border: 1px dashed rgba(88, 26, 34, 0.822);
-    padding: 15px;
-    background-color: rgb(238, 237, 236);
-    max-width: 650px;
-    text-align: center;
-    font-size: 12px;
-} */
+
 
 /* 5 day forecast */
 .forecast,
@@ -256,7 +173,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(218, 247, 247);
     font-size: 8px;
 }
 
@@ -270,3 +187,4 @@ footer p {
 iframe {
     display: none;
 }
+
