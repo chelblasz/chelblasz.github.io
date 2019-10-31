@@ -4,7 +4,14 @@
 
 body {
     font-family: 'Montserrat Alternates', sans-serif;
-    background-color: rgb(255, 255, 255);
+   
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 /* Header
@@ -189,6 +196,8 @@ footer p {
     text-align: center;
     align-self: flex-end;
     margin-left: 30%;
+    color: rgb(255, 255, 255);
+    
 }
 
 /* map */

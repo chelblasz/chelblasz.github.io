@@ -7,6 +7,13 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
 /* Header
 __________________________________________________________________________________________________________________________ */
 

@@ -111,6 +111,8 @@
         margin-left: auto;
         margin-right: 0;
         display: block;
+        max-width: 100px;
+        height: 100px;
     }
     
     
