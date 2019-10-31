@@ -1,0 +1,109 @@
+@media screen and (min-width: 700px) {
+
+    /* Header
+    __________________________________________________________________________________________________________________________ */
+    
+    /* .alignment {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        vertical-align: middle;
+        align-items: center;
+        padding: 40px;
+        margin: -80px;
+        
+    } */
+
+    /* little hitch-hikers */
+     #logo {
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .sub-header {
+        display: inline-flex;
+        font-size: 16px;
+
+    }
+    
+  /* _________________________________NAV______________________________________ */
+
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: #ffffff;
+	}
+}
+    
+    /* Main Body Content
+    ______________________________________________________________________________________________________________________________ */
+    
+    /* preston idaho */
+    .city {
+        position: relative;
+        font-size: 2em;
+    }
+    
+    /* #pancake {
+        font-size: 24px;
+    } */
+    
+    #weatherSummary {
+        top: 420px;
+        right: 30px;
+        padding: 5px 5px;
+        font-size: 10px; 
+      } 
+    
+    /* 5 day forecast */
+    .forecast,
+    .forecast h3 {
+        display: flex;
+        justify-content: center;
+        margin: 18px auto;
+        border: 1px dashed rgba(88, 26, 34, 0.822);
+        padding: 15px;
+        background-color: rgb(238, 237, 236);
+        max-width: 650px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .article {
+        max-width: 650px;
+        font-size: 20px;
+    }
+    
+    .contact {
+        max-width: 650px;
+        font-size: 20px;
+    }
+    
+    /* footer
+    ____________________________________________________________________________________________________________________________________ */
+    footer {
+        font-size: 10px;
+        width: 100%;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+    
+    /* map */
+    iframe {
+        padding: 20px 20px;
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+    }
+    
+    
+    }
