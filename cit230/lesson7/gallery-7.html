@@ -7,9 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Preston Weather Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small7.css">
-    <link rel="stylesheet" href="styles/medium7.css">
-    <link rel="stylesheet" href="styles/large7.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
     <link rel="shortcut icon" href="images/favicon48.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="images/prestonhero.jpg"> -->
 </head>
@@ -17,13 +15,13 @@
 <body>
     <header class="logoheader">
 
-    </header>
-
-    <main class="body-content">
-        <nav>
+        <div>
             <a class="navbar-logo" href="#">
                 <img src="../lesson7/images/treelogo.png" alt="logo">
             </a>
+        </div>
+
+        <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="##">Home Page</a></li>
@@ -35,62 +33,76 @@
             </ul>
         </nav>
 
+
+    </header>
+
+    <main class="body-content">
+
         <h1>Gallery</h1>
         <section id="gallery">
             <figure>
-                <img class="pic" src="../lesson7/images/weather1.jpg" alt="Eyelashes">
+                <a href="images/weather1.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Eyelashes">
+                </a>
                 <figcaption>Frozen Eye Lashes </figcaption>
             </figure>
 
             <figure>
-                <img class="pic" src="../lesson7/images/weather2.jpg" alt="Cloudy">
+                <a href="images/weather2.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Cloudy" />
+                </a>
                 <figcaption>Cloud Flurry</figcaption>
             </figure>
 
             <figure>
-                <img class="pic" src="../lesson7/images/weather3.jpg" alt="Beach">
+                <a href="images/weather3.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Beach">
+                </a>
                 <figcaption>Beach Sunset</figcaption>
             </figure>
 
             <figure>
-                <img class="pic" src="../lesson7/images/weather4.jpg" alt="Mountains">
+                <a href="images/weather4.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Mountains">
+                </a>
                 <figcaption>Mountains and more Mountains</figcaption>
             </figure>
 
             <figure>
-                <img class="pic" src="../lesson7/images/weather5.jpg" alt="Rain">
+                <a href="images/weather5.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Rain">
+                </a>
                 <figcaption>Concentrated Rain Stop</figcaption>
             </figure>
 
             <figure>
-                <img class="pic" src="../lesson7/images/weather6.jpg" alt="Lightning">
+                <a href="images/weather6.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Lightning">
+                </a>
                 <figcaption>Cactus Lightning</figcaption>
             </figure>
 
             <figure>
-                <img class="pic" src="../lesson7/images/weather7.jpg" alt="Blue">
+                <a href="images/weather7.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Blue">
+                </a>
                 <figcaption>Blue Mountains</figcaption>
             </figure>
 
             <figure>
-                <img class="pic" src="../lesson7/images/weather8.jpg" alt="Heaven">
+                <a href="images/weather8.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Heaven">
+                </a>
                 <figcaption>Heaven Calling Souls Home</figcaption>
             </figure>
 
             <figure>
-                <img class="pic" src="../lesson7/images/weather9.jpg" alt="Canal">
+                <a href="images/weather9.jpg" class="progressive replace">
+                    <img class="pic" src="images/400x400.png" alt="Canal">
+                </a>
                 <figcaption>Farming Canal</figcaption>
             </figure>
         </section>
-
-        <section class="article">Warning
-            <p>
-                There are big storms coming this weekend especially on the west side of Targee.
-                We advise staying inside with your little ones and venturing out next weekend.
-                If you are caught in the storm and need assistance call 1-800-parents.
-            </p>
-        </section>
-
 
     </main>
 
@@ -99,8 +111,9 @@
 
     </footer>
 
-    <script src="scripts/main.js"></script>
-    <script src="scripts/maindate.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/lazyload.js"></script>
 
 </body>
 

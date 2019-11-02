@@ -1,0 +1,357 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* Header
+__________________________________________________________________________________________________________________________ */
+
+.logo-header {
+        display: flex;
+        top: 20px;
+        left: 20px;
+}
+
+/* little hitch-hikers */
+#logo {
+    /* width: 200px;
+    display: flex;
+    flex-direction: row; */
+}
+
+.sub-header {
+    font-size: .75em;
+    color: black;
+}
+
+/* _____________________NAV_____________________ */
+
+nav {
+	max-width: 100%;
+	overflow: hidden;
+	background-color: rgb(17, 18, 20);
+}
+
+.navbar-logo {
+	display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: rgb(230, 154, 154);
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: rgb(160, 160, 160);
+	background-color: rgb(66, 38, 50);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.responsive li {
+	display: block;
+}
+
+/* StUFF
+_____________________________________________________________________________________ */
+
+#gallery {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: 1fr; 
+  row-gap: 40px;
+}
+
+/* .pic {
+    max-width: 300px;
+} */
+
+a, figure {
+  margin: 0 auto;
+  padding: 0 auto;
+ 
+}
+
+/* Lazy Load
+________________________________________________________________________________________ */
+
+  /* article {
+    max-width: 40em;
+    padding: 0 4em;
+    margin: 0 auto;
+  } */
+  
+  /* p, a {
+    margin-top: 2em;
+  }
+  
+  h2 + p {
+    margin-top: 0;
+  }
+  
+  ul, ol {
+    margin: 1em 0 0 2em;
+  }
+  
+  li {
+    margin-top: 0.5em;
+  } */
+  
+  /* pre {
+    white-space: pre;
+    padding: 2px 6px;
+    margin-top: 1em;
+    background-color: #ddd;
+    border-radius: 3px;
+    overflow: auto;
+  } */
+  
+  /* code {
+    font-size: 1.1em;
+  } */
+  
+  /* img {
+    max-width: 300px;
+  } */
+  
+  a.primary {
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+  }
+  
+  a.full {
+    clear: both;
+    width: 100%;
+    box-shadow: 0 3px 4px #000;
+  }
+  
+  a.boxout1, a.boxout2 {
+    clear: both;
+    float: left;
+    width: 60%;
+    margin: 1em 1em 0 -4em;
+    box-shadow: 0 3px 4px #000;
+  }
+  
+  a.boxout2 {
+    float: right;
+    margin: 1em -4em 0 1em;
+  }
+  
+  /* progressive image CSS */
+  a.progressive {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    outline: none;
+  }
+  
+  a.progressive:not(.replace) {
+    cursor: default;
+  }
+  
+  a.progressive img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    /* height: auto; */
+    border: 0 none;
+  }
+  
+  a.progressive img:hover {
+  border-radius: 15%;
+  }
+  
+  a.progressive img.preview {
+    filter: blur(2vw);
+    transform: scale(1.05);
+  }
+  
+  a.progressive img.reveal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    will-change: transform, opacity;
+    animation: reveal 1s ease-out;
+  }
+  
+  @keyframes reveal {
+      0% { transform: scale(1.05); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+  }
+
+/* footer
+_________________________________________________________________________________________ */
+footer {
+    bottom: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: rgb(61, 18, 18);
+    font-size: 8px;
+}
+
+footer p {
+    text-align: center;
+    align-self: flex-end;
+    margin-left: 30%;
+    color: rgb(255, 255, 255);
+    
+}
+
+/* map */
+iframe {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+
+  /* Header
+  __________________________________________________________________________________________________________________________ */
+  
+  /* .alignment {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      vertical-align: middle;
+      align-items: center;
+      padding: 40px;
+      margin: -80px;
+      
+  } */
+
+  /* little hitch-hikers */
+   #logo {
+      width: 250px;
+      border-radius: 10px;
+  }
+
+  .sub-header {
+      display: inline-flex;
+      font-size: 16px;
+
+  }
+  
+/* _________________________________NAV______________________________________ */
+
+.navigation {
+  display: flex;
+}
+
+.navigation li:first-child {
+  display: none;
+}
+
+.navigation li {
+  display: block;
+  flex: 1 1 100%;
+}
+
+.navigation li a {
+  color: #ffffff;
+}
+  
+  /* Main Body Content
+  ______________________________________________________________________________________________________________________________ */
+  #gallery {
+      grid-template-columns: 1fr 1fr; 
+  }
+
+  .pic {
+      max-width: 200px;
+  }
+  
+  /* footer
+  ____________________________________________________________________________________________________________________________________ */
+  footer {
+      font-size: 10px;
+      width: 100%;
+  }
+  
+  footer p {
+      font-size: 12px;
+  }
+  
+  /* map */
+  iframe {
+      padding: 20px 20px;
+      margin-left: auto;
+      margin-right: 0;
+      display: block;
+      max-width: 100px;
+      height: 100px;
+  }
+  
+  
+  } 
+
+  @media screen and (min-width: 1000px) {
+    
+    /* Header
+__________________________________________________________________________________________ */
+
+
+/* Nav
+_________________________________________________________________________________________*/
+
+.navigation li a {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Main Body Content
+_________________________________________________________________________________________ */
+#gallery {
+    grid-template-columns: 1fr 1fr 1fr; 
+}  
+
+.pic {
+    max-width: 300px;
+}
+
+/* footer
+_________________________________________________________________________________________ */
+footer {
+    font-size: 12px;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+    
+}   
+
