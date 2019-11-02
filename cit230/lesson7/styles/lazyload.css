@@ -7,6 +7,9 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+main {
+  margin: 50px;
+}
 
 .background {
     background-repeat: no-repeat;
@@ -94,9 +97,9 @@ ________________________________________________________________________________
   row-gap: 40px;
 }
 
-/* .pic {
-    max-width: 300px;
-} */
+.pic {
+  background: transparent;
+}
 
 a, figure {
   margin: 0 auto;
@@ -177,27 +180,32 @@ ________________________________________________________________________________
     display: block;
     overflow: hidden;
     outline: none;
+    
   }
   
   a.progressive:not(.replace) {
     cursor: default;
+   
   }
   
   a.progressive img {
-    display: block;
-    width: 100%;
+    /* display: block; */
+    /* width: 100%; */
     max-width: 300px;
     /* height: auto; */
     border: 0 none;
+   
   }
   
   a.progressive img:hover {
   border-radius: 15%;
+ 
   }
   
   a.progressive img.preview {
     filter: blur(2vw);
     transform: scale(1.05);
+   
   }
   
   a.progressive img.reveal {
@@ -206,6 +214,7 @@ ________________________________________________________________________________
     top: 0;
     will-change: transform, opacity;
     animation: reveal 1s ease-out;
+    background: transparent;
   }
   
   @keyframes reveal {
