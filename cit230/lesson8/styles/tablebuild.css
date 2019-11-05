@@ -25,8 +25,9 @@ th {
     background-color: #628ca6;
     color: #ffffff;
 }
-.blue {
+td[colspan="1"]{
     background-color: #628ca6;  
+    color: #ffffff;
 }
 #italic {
     font-style: italic;
