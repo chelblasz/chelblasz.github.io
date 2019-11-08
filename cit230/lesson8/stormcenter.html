@@ -30,14 +30,15 @@
                     </ul>
                     </nav>
     </header>
-    <div class="background" style="background-image: url('images/cloudbackground.png');">
+    <div class="background" style="background-image: url('images/ominous.jpg');">
+        <h2>Local Weather Threats</h2>
 
         <main>
             <!-- generally for our method we ALWAYS use POST but Github does not support post -->
             <form action="thanks.html" method="GET">
                 <div>
                     <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" required minlength="4">
+                    <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
                 </div>
                 <div>
                     <label for="email">Enter Your Email:</label>
@@ -92,7 +93,50 @@
                 </div>
 
                 <div>
+                    <label for="stormRegion">Storm Region:</label>
+                    <select name="stormRegion" id="stormRegion">
+                        <option selected disabled value="Select Region">Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Sugar City">Sugar City</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <span class="danger">Are You in Danger?</span>
+                    <label class="container">Yes
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">No
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Maybe
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <!-- <label class="radio" for="userDanger">User in-danger:</label>
+                   
+                     <label for="yes"><input type="radio" id="yes" name="danger" checked>Yes</label>
+                     
+                   
+                     <label for="no"><input type="radio" id="no" name="danger" value="9">No</label>
+                       
+                
+                    <label for="maybe"><input type="radio" id="maybe" name="danger" value="10">Maybe</label> -->
+                </div>
+
+                <div>
+                    <div> <label class="alignmentCom" for="stormRegion">Comments:</label></div>
+                    <div><textarea name="comments" id="comments" cols="60" rows="10"></textarea></div>
+                </div>
+
+                <div>
                     <input type="submit" id="submit" name="submit">
+                    <input type="reset" id="reset" name="reset">
                 </div>
 
             </form>
