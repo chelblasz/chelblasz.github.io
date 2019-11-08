@@ -84,6 +84,11 @@ nav {
 /* Main Body Content
 ________________________________________________________________________________________________________ */
 
+form {
+    max-width: 600px;
+    
+}
+
 /* idaho mountains */
 /* idaho mountains */
 .my_hero {

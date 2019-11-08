@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+main {
+  margin: 50px;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* Header
+__________________________________________________________________________________________________________________________ */
+
+.logo-header {
+        display: flex;
+        top: 20px;
+        left: 20px;
+}
+
+/* little hitch-hikers */
+#logo {
+    /* width: 200px;
+    display: flex;
+    flex-direction: row; */
+}
+
+.sub-header {
+    font-size: .75em;
+    color: black;
+}
+
+/* __________________Main Body Content________________________ */
+
+div {
+    padding: 10px;
+}
+
+input {
+    display: block;
+    }
+#tickmarks {
+    /* align-self: center; */
+}
+
+
+/* _____________________NAV_____________________ */
+
+nav {
+	max-width: 100%;
+	overflow: hidden;
+	background-color: rgb(17, 18, 20);
+}
+
+.navbar-logo {
+	display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: rgb(230, 154, 154);
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: rgb(160, 160, 160);
+	background-color: rgb(66, 38, 50);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.responsive li {
+	display: block;
+}
+
+
+/* footer
+_________________________________________________________________________________________ */
+footer {
+    bottom: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: rgb(0, 0, 0);
+    font-size: 8px;
+}
+
+footer p {
+    text-align: center;
+    align-self: flex-end;
+    margin-left: 30%;
+    color: rgb(255, 255, 255);
+    
+}
+
+/* map */
+iframe {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+
+  /* Header
+  __________________________________________________________________________________________________________________________ */
+  
+  
+  /* little hitch-hikers */
+   #logo {
+      width: 250px;
+      border-radius: 10px;
+  }
+
+  .sub-header {
+      display: inline-flex;
+      font-size: 16px;
+
+  }
+  
+/* _________________________________NAV______________________________________ */
+
+.navigation {
+  display: flex;
+}
+
+.navigation li:first-child {
+  display: none;
+}
+
+.navigation li {
+  display: block;
+  flex: 1 1 100%;
+}
+
+.navigation li a {
+  color: #ffffff;
+}
+  
+  /* Main Body Content
+  ______________________________________________________________________________________________________________________________ */
+ 
+  
+  /* footer
+  ____________________________________________________________________________________________________________________________________ */
+  footer {
+      font-size: 10px;
+      width: 100%;
+  }
+  
+  footer p {
+      font-size: 12px;
+  }
+  
+  /* map */
+  iframe {
+      padding: 20px 20px;
+      margin-left: auto;
+      margin-right: 0;
+      display: block;
+      max-width: 100px;
+      height: 100px;
+  }
+  
+  
+  } 
+
+  @media screen and (min-width: 1000px) {
+    
+    /* Header
+__________________________________________________________________________________________ */
+
+
+/* Nav
+_________________________________________________________________________________________*/
+
+.navigation li a {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Main Body Content
+_________________________________________________________________________________________ */
+
+
+/* footer
+_________________________________________________________________________________________ */
+footer {
+    font-size: 12px;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+    
+}   
+
