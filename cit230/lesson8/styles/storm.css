@@ -23,15 +23,18 @@ ________________________________________________________________________________
 
 #logo {
     width: 102px;
+    margin-left: 10px;
+    
 }
 .alignment {
-        display: flex;
-        flex-direction: column;
+      display: inline-block;
+    
 }
 
-.sub-header {
-    font-size: .1em;
+h1 {
+    font-size: .5em;
     color: black;
+    margin-top: -20px;
 }
 
 /* _____________________NAV_____________________ */
@@ -232,11 +235,13 @@ label {
     border-radius: 50%;
     background: rgb(21, 28, 117);
   }
+  /* ______________________comments box____________________ */
 
 .alignmentCom {
     vertical-align: middle;
 }
 
+ /* ______________________Submit and Reset Buttons____________________ */
 #submit {
     border-radius: 15%;
     background-color: rgb(15, 11, 59);
@@ -249,9 +254,8 @@ label {
     border-radius: 15%;
     background-color: rgb(255, 255, 255);
     border: none;
-    padding: 6px;
+    padding: 10px;
     color:black;
-    font-size: 10px;
 }
 
 /* footer
