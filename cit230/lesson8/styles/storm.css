@@ -21,22 +21,68 @@ main {
 /* Header
 __________________________________________________________________________________________________________________________ */
 
-.logo-header {
-        display: flex;
-        top: 20px;
-        left: 20px;
-}
-
-/* little hitch-hikers */
 #logo {
-    /* width: 200px;
-    display: flex;
-    flex-direction: row; */
+    width: 102px;
+}
+.alignment {
+        display: flex;
+        flex-direction: column;
 }
 
 .sub-header {
-    font-size: .75em;
+    font-size: .1em;
     color: black;
+}
+
+/* _____________________NAV_____________________ */
+
+nav {
+	max-width: 100%;
+	overflow: hidden;
+	background-color: rgb(17, 18, 20);
+}
+
+.navbar-logo {
+	display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: rgb(230, 154, 154);
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.active {
+    background-color: rgba(17, 57, 102, 0.521);
+}
+
+.navigation a:hover {
+	color: rgb(160, 160, 160);
+	background-color: rgb(66, 38, 50);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.responsive li {
+	display: block;
 }
 
 /* __________________Main Body Content________________________ */
@@ -97,10 +143,15 @@ label {
   /* Storm Region */
   #stormRegion {
     min-width: 150px;
+    padding-right: 60px;
   }
 
   #stormDate {
     min-width: 150px;  
+  }
+
+  .Severity {
+    padding-right: 0px;
   }
 
 
@@ -113,11 +164,11 @@ label {
 }
 .dangerClass {
     text-align: center;
-    padding-left: 42px;
+    padding-left: 80px;
 }
 
 .radioBox {
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 
@@ -186,58 +237,22 @@ label {
     vertical-align: middle;
 }
 
-
-/* _____________________NAV_____________________ */
-
-nav {
-	max-width: 100%;
-	overflow: hidden;
-	background-color: rgb(17, 18, 20);
+#submit {
+    border-radius: 15%;
+    background-color: rgb(15, 11, 59);
+    border: none;
+    padding: 10px;
+    color: white;
 }
-
-.navbar-logo {
-	display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
+#reset {
+    margin-right: 340px;
+    border-radius: 15%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 6px;
+    color:black;
+    font-size: 10px;
 }
-
-.navigation {
-	list-style: none;
-	text-align: center;
-	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	color: rgb(230, 154, 154);
-	padding: 0.75rem;
-	text-align: center;
-	text-decoration: none;
-}
-
-.active {
-    background-color: rgba(17, 57, 102, 0.521);
-}
-
-.navigation a:hover {
-	color: rgb(160, 160, 160);
-	background-color: rgb(66, 38, 50);
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.responsive li {
-	display: block;
-}
-
 
 /* footer
 _________________________________________________________________________________________ */
@@ -265,22 +280,6 @@ iframe {
 }
 
 @media screen and (min-width: 700px) {
-
-  /* Header
-  __________________________________________________________________________________________________________________________ */
-  
-  
-  /* little hitch-hikers */
-   #logo {
-      width: 250px;
-      border-radius: 10px;
-  }
-
-  .sub-header {
-      display: inline-flex;
-      font-size: 16px;
-
-  }
   
 /* _________________________________NAV______________________________________ */
 

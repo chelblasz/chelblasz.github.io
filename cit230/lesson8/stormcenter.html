@@ -16,7 +16,8 @@
     <header class="logoheader">
         <section class="alignment">
             <img id="logo" src="images/treelogo.png" alt="logo">
-            <p><span class="sub-header">Keeping our favorite little hitch-hikers warm and safe</span</p> </section>
+            <p><span class="sub-header">Keeping our babes warm and safe</span</p> 
+        </section>
                         <nav>
                     <ul class="navigation">
                         <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
@@ -74,7 +75,7 @@
                     </div>
 
                     <div>
-                        <label for="stormSeverity">Storm Severity Rating (1 to 10): &nbsp;&nbsp;&nbsp;
+                        <label class="Severity" for="stormSeverity">Storm Severity Rating (1 to 10): &nbsp;&nbsp;&nbsp;
                             <input type="range" id="myRange" value="5" min="1" max="10" step="1" class="slider"
                                 list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingValue">5</span>
@@ -130,8 +131,9 @@
                     </div>
 
                     <div>
-                        <input type="submit" id="submit" name="submit">
                         <input type="reset" id="reset" name="reset">
+                        <input type="submit" id="submit" name="submit">
+
                     </div>
                 </section>
 
