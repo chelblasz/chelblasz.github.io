@@ -48,19 +48,79 @@ div {
 h2 {
     display: flex;
     justify-content: center;
+    font-size: 40px;
 }
 
 label {
     display: inline-block;
     min-width: 260px;
 }
-form {
-    background-color: #3817cc48;
+
+#formSection {
+    background-color: #07135a48;
     color: #ffffff;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
+
+
+/* RANGE SLIDER */
+
+
+  .slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.9;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(8, 12, 68);
+    cursor: pointer;
+  }
+
+  /* Storm Region */
+  #stormRegion {
+    min-width: 150px;
+  }
+
+  #stormDate {
+    min-width: 150px;  
+  }
+
+
 
 /* ______________________RADIO BUTTONS__________________ */
     /* Customize the label (the container) */
+#dangerRadio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.dangerClass {
+    text-align: center;
+    padding-left: 42px;
+}
+
+.radioBox {
+    padding-left: 20px;
+}
+
+
 .container {
     display: block;
     position: relative;

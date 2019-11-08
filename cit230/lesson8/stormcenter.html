@@ -35,109 +35,105 @@
 
         <main>
             <!-- generally for our method we ALWAYS use POST but Github does not support post -->
-            <form action="thanks.html" method="GET">
-                <div>
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
-                </div>
-                <div>
-                    <label for="email">Enter Your Email:</label>
-                    <input type="email" id="email" name="email" placeholder="myemail@email.com">
-                </div>
-                <div>
-                    <label for="number">Enter Your Phone Number:</label>
-                    <input type="tel" id="number" name="number" required>
-                </div>
-                <div>
-                    <label for="zipCode">Enter Your Zip Code:</label>
-                    <input type="number" id="zipCode" name="zipCode" required>
-                </div>
-                <div>
-                    <label for="stormDate">Storm Date:</label>
-                    <input type="date" id="stormDate" name="stormDate">
-                </div>
-                <div>
-                    <label for="stormType">Storm Type:</label>
-                    <input list="stormType">
 
-                    <datalist id="stormType">
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                    </datalist>
+            <form action="thanks.html" method="GET" id="forms">
 
-                </div>
+                <section id="formSection">
+                    <div>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
+                    </div>
+                    <div>
+                        <label for="email">Enter Your Email:</label>
+                        <input type="email" id="email" name="email" placeholder="myemail@email.com">
+                    </div>
+                    <div>
+                        <label for="number">Enter Your Phone Number:</label>
+                        <input type="tel" id="number" name="number" required>
+                    </div>
+                    <div>
+                        <label for="zipCode">Enter Your Zip Code:</label>
+                        <input type="number" id="zipCode" name="zipCode" required>
+                    </div>
+                    <div>
+                        <label for="stormDate">Storm Date:</label>
+                        <input type="date" id="stormDate" name="stormDate">
+                    </div>
+                    <div>
+                        <label for="stormType">Storm Type:</label>
+                        <input list="stormType">
 
-                <div>
-                    <label for="stormSeverity">Storm Severity Rating (1 to 10): &nbsp;&nbsp;&nbsp;
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
-                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
-                    </label>
+                        <datalist id="stormType">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
 
-                    <datalist id="tickmarks">
-                        <option value="0">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5">
-                        <option value="6">
-                        <option value="7">
-                        <option value="8">
-                        <option value="9">
-                        <option value="10">
-                    </datalist>
-                </div>
+                    </div>
 
-                <div>
-                    <label for="stormRegion">Storm Region:</label>
-                    <select name="stormRegion" id="stormRegion">
-                        <option selected disabled value="Select Region">Select Region</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Sugar City">Sugar City</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                    </select>
+                    <div>
+                        <label for="stormSeverity">Storm Severity Rating (1 to 10): &nbsp;&nbsp;&nbsp;
+                            <input type="range" id="myRange" value="5" min="1" max="10" step="1" class="slider"
+                                list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingValue">5</span>
+                        </label>
 
-                </div>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </div>
 
-                <div>
-                    <span class="danger">Are You in Danger?</span>
-                    <label class="container">Yes
-                        <input type="radio" checked="checked" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">No
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">Maybe
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
+                    <div>
+                        <label for="stormRegion">Storm Region:</label>
+                        <select name="stormRegion" id="stormRegion">
+                            <option selected disabled value="Select Region">Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Sugar City">Sugar City</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
 
-                    <!-- <label class="radio" for="userDanger">User in-danger:</label>
-                   
-                     <label for="yes"><input type="radio" id="yes" name="danger" checked>Yes</label>
-                     
-                   
-                     <label for="no"><input type="radio" id="no" name="danger" value="9">No</label>
-                       
-                
-                    <label for="maybe"><input type="radio" id="maybe" name="danger" value="10">Maybe</label> -->
-                </div>
+                    </div>
+                    <section id="dangerRadio">
+                        <label class="dangerClass">Are You in Danger?</label>
+                        <div class="radioBox">
+                            <label class="container">Yes
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">No
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Maybe
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </section>
 
-                <div>
-                    <div> <label class="alignmentCom" for="stormRegion">Comments:</label></div>
-                    <div><textarea name="comments" id="comments" cols="60" rows="10"></textarea></div>
-                </div>
 
-                <div>
-                    <input type="submit" id="submit" name="submit">
-                    <input type="reset" id="reset" name="reset">
-                </div>
+                    <div>
+                        <div> <label class="alignmentCom" for="stormRegion">Comments:</label></div>
+                        <div><textarea name="comments" id="comments" cols="60" rows="10"></textarea></div>
+                    </div>
+
+                    <div>
+                        <input type="submit" id="submit" name="submit">
+                        <input type="reset" id="reset" name="reset">
+                    </div>
+                </section>
 
             </form>
         </main>
