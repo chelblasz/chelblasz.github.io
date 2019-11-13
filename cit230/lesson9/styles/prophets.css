@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css?family=Prosto+One&display=swap');
+
+body {
+    font-family: 'Prosto One', cursive;
+}
+
+h1 {
+border: 15px solid darkgoldenrod;
+padding: 10px;
+margin: 20px;
+text-align: center;
+}
+
+img {
+    max-width: 200px;
+    padding-top:10px ;
+}
+
+article {
+    background-color: cornflowerblue;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5%;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer {
+    text-align: center;
+}
+
+
+/* MEDIUM */
+@media only screen and (min-width: 32.5em) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* LARGE */
+@media only screen and (min-width: 60.5em) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
