@@ -23,7 +23,10 @@ article {
     padding: 10px;
     text-align: center;
     border-radius: 5%;
+}
 
+div {
+    padding-top: 10px;
 }
 
 section {
