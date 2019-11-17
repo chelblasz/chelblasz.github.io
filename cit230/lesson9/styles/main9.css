@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+/* Header
+__________________________________________________________________________________________________________________________ */
+
+/* little hitch-hikers */
+#logo {
+    
+   margin-bottom: 0;
+}
+
+.sub-header {
+    margin-top: 0;
+    margin-left: 15px;
+    font-size: .75em;
+    color: black;
+}
+
+/* _____________________NAV_____________________ */
+
+nav {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: rgb(17, 18, 20);
+}
+
+.navbar-logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: rgb(230, 154, 154);
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 38, 50);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.responsive li {
+    display: block;
+}
+
+/* Main Body Content
+________________________________________________________________________________________________________ */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}
+
+article {
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5%;
+    max-width: 350px;
+}
+
+h1 {
+    font-size: 24px;
+    padding-bottom: 0px;
+    margin-bottom: 3px;
+}
+
+h2 {
+    font-size: 10px;
+    font-style: italic;
+    padding-top: 0px;
+    margin-top: 0;
+    overflow-wrap: break-word;
+}
+
+p {
+    font-size: 15px;
+   margin: 10px;
+}
+
+img {
+    max-width: 230px;
+}
+
+
+/* footer
+_________________________________________________________________________________________ */
+footer {
+    margin-top: 100px;
+    bottom: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 8px;
+}
+
+footer p {
+    text-align: center;
+    /* align-self: flex-end; */
+    /* margin-left: 30%; */
+    color: rgb(255, 255, 255);
+
+}
+
+/* map */
+iframe {
+    display: none;
+}
+
+
+
+/* _____________________MEDIUM______________________ */
+
+
+
+@media screen and (min-width: 32.5em) {
+
+    /* _________________________________NAV______________________________________ */
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: #ffffff;
+    }
+
+
+    /* ________________Main Body________________ */
+    .grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    article {
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 13px;
+        padding-bottom: 6px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    img {
+        max-width: 330px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    /* Nav
+_________________________________________________________________________________________*/
+
+    .navigation li a {
+        color: rgb(255, 255, 255);
+    }
+
+    /* ________________Main Body________________ */
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    /* article {
+        background-color: rgb(189, 189, 189);
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    img {
+        max-width: 430px;
+    }
+     */
+}

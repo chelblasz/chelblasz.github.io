@@ -43,12 +43,6 @@ if (currentDay > 6) {
 //assign value to placeholder in HTML
 const element = document.getElementById(`day${i}`);
 
-element.innerHTML = daysOfWeek[currentDay];
+// element.innerHTML = daysOfWeek[currentDay];
 
-}
-
-//show hide pancake
-
-if(daysOfWeek === ) {
-    document.getElementById("pancake").removeAttribute("class", "hidden"); 
 }
