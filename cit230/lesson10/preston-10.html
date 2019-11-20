@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston Weather Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small6.css">
+    <!-- <link rel="stylesheet" href="styles/medium6.css">
+    <link rel="stylesheet" href="styles/large6.css"> -->
+    <link rel="shortcut icon" href="images/favicon48.png" type="image/x-icon">
+    <link rel="stylesheet" href="images/prestonhero.jpg">
+</head>
+
+<body>
+
+
+    <header class="logo-header">
+        <section>
+            <img id="logo" src="images/logo.png" alt="logo">
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../lesson9/index.html">Home Page</a></li>
+            <li><a href="../lesson6/lesson6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="background" style="background-image: url('images/cloudbackground.png');">
+
+        <main class="body-content">
+            <section class="hero-image">
+                </div>
+                <h2 class="city">Preston Idaho</h2>
+                <div id=weatherSummary>
+                    <h3>Weather Summary</h3>
+                    <p>
+                        <span>Current Temperature: </span>
+                        <span id="currentTemp"></span>
+                    </p>
+                    <p>
+                        <span>Windchill: </span>
+                        <span id="windChill"></span>
+                    </p>
+                    <p>
+                        <span>Wind Speed: </span>
+                        <span id="windSpeed"></span>
+                    </p>
+                </div>
+                    <img src="images/mountainssmall.jpg"
+                        srcset="images/idahomountains.jpg 1200w, images/mountainslarge.jpg 800w, images/mountainssmall.jpg 400w"
+                        id="hero-img">
+                    <!-- <picture>
+                                    <source srcset="images/mountainssmall.jpg"
+                                        media="(min-width:100px) and (max-width:799px)">
+                                    <source srcset="images/mountainslarge.jpg" media="(min-width:800px)">
+                                    <img src="../lesson6/images/idahomountains.jpg" alt="Idaho Mountains">
+                                </picture> -->
+                
+            </section>
+
+            <section class="forecast">
+                <h3>High Temperature Forecast</h3>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th id="day1">Day 1</th>
+                        <th id="day2">Day 2</th>
+                        <th id="day3">Day 3</th>
+                        <th id="day4">Day 4</th>
+                        <th id="day5">Day 5</th>
+                    </tr>
+                    <tr>
+                        <td>forecast</td>
+                        <td id="temp 1"></td>
+                        <td id="temp 2"></td>
+                        <td id="temp 3"></td>
+                        <td id="temp 4"></td>
+                        <td id="temp 5"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="article">Warning
+                <p>
+                    There are big storms coming this weekend especially on the west side of Targee.
+                    We advise staying inside with your little ones and venturing out next weekend.
+                    If you are caught in the storm and need assistance call 1-800-parents.
+                </p>
+            </section>
+
+            <section class="contact">
+                <p>
+                    Contact Information
+                    News Weather Woman Chels Black
+                    1 (800)-555-8765
+                    msn.weather.com
+
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; <span id="currentDate"></span> &star; Chelsea Blaszczyk &star;</p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7738534444!2d-111.91534445925855!3d42.09974162638193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571256799894!5m2!1sen!2sus"
+                width="200" height="200" style="border:0;"></iframe>
+
+        </footer>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/maindate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
