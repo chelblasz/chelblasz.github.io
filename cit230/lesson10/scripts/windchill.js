@@ -1,4 +1,4 @@
- function getWeather()
+//  function getWeather()
 const apiWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=a4de96eb4c9cdd8c0998596fbb5ae04d&units=imperial';
 
 fetch(apiWeatherURL)
@@ -11,6 +11,7 @@ fetch(apiWeatherURL)
             // console.log(currentWeather.main.temp);
 
             let currentTemp = currentWeather.main.temp;
+            let tempHigh = currentWeather.main.temp_max;
             let windSpeed = currentWeather.wind.speed;
             let windChill;
 
@@ -19,7 +20,9 @@ fetch(apiWeatherURL)
             }
 
             document.getElementById("currentTemp").innerHTML = currentTemp + "&deg;";
+            document.getElementById("tempHigh").innerHTML = tempHigh + "&deg;";
             document.getElementById("windSpeed").innerHTML = windSpeed + " mph";
+            document.getElementById("windChill").innerHTML = windChill;
 
             if (windChill === 0) {
                 document.getElementById("windChill").innerHTML = "N/A";

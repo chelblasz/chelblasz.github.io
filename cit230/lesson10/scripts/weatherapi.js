@@ -19,3 +19,5 @@ fetch(apiURL)
 
     document.querySelector('#weather-icon').setAttribute('alt', currentWeather.weather[0].main);
   });
+
+ 

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main-preston.css">
     <link rel="shortcut icon" href="images/favicon48.png" type="image/x-icon">
-    <link rel="stylesheet" href="images/prestonhero.jpg">
 </head>
 
 <body class="background">
@@ -35,23 +34,26 @@
 
     <main class="body-content">
         <section class="hero-image">
-            </div>
             <h2 class="city">Preston Idaho</h2>
-            <div id=weatherSummary>
-                <h3>Weather Summary</h3>
-                <p>
-                    <span>Current Temperature: </span>
-                    <span id="currentTemp"></span>
-                </p>
-                <p>
-                    <span>Windchill: </span>
-                    <span id="windChill"></span>
-                </p>
-                <p>
-                    <span>Wind Speed: </span>
-                    <span id="windSpeed"></span>
-                </p>
-            </div>
+                        <div id=weatherSummary>
+                            <h3 id="summary">Weather Summary</h3>
+                            <p>
+                                <span>Current Temperature: </span>
+                                <span id="currentTemp"></span>
+                            </p>
+                            <p>
+                                <span>High Temp of: </span>
+                                <span id="tempHigh"></span>
+                            </p>
+                            <p>
+                                <span>Windchill: </span>
+                                <span id="windChill"></span>
+                            </p>
+                            <p>
+                                <span>Wind Speed: </span>
+                                <span id="windSpeed"></span>
+                            </p>
+                        </div>
             <img src="images/mountainssmall.jpg"
                 srcset="images/idahomountains.jpg 1200w, images/mountainslarge.jpg 800w, images/mountainssmall.jpg 400w"
                 id="hero-img">
@@ -77,11 +79,11 @@
                 </tr>
                 <tr>
                     <td>forecast</td>
-                    <td id="temp 1"></td>
-                    <td id="temp 2"></td>
-                    <td id="temp 3"></td>
-                    <td id="temp 4"></td>
-                    <td id="temp 5"></td>
+                    <td id="temp1"></td>
+                    <td id="temp2"></td>
+                    <td id="temp3"></td>
+                    <td id="temp4"></td>
+                    <td id="temp5"></td>
                 </tr>
             </table>
         </section>
@@ -132,10 +134,9 @@
     </footer>
     </div>
 
-    <script src="scripts/main.js"></script>
     <script src="scripts/maindate.js"></script>
-    <script src="scripts/weatherapi.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/five-day-forecast.js"></script>
 </body>
 
 </html>
