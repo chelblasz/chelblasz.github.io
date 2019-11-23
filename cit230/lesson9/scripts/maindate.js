@@ -3,7 +3,6 @@ var currentDateString;
 var currentDate = new Date();
 //get day of week
 
-
 var weekDayDate = currentDate.getDay();
 //get name of the day
 var daysOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];

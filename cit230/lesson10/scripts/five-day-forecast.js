@@ -1,11 +1,14 @@
+var todayString;
+
 const today = new Date();
-var weekDayDate = currentDate.getDay();
+var weekDayDate = today.getDay();
 //get name of the day
 var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 var weekDay = daysOfWeek[weekDayDate];
 
-currentDateString = weekDay + ", ";
+todayString = weekDay + ", ";
+
 //__________________________________________________________________________________________________ 
 // create 5 day forecast
 let currentDay = weekDayDate;

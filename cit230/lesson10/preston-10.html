@@ -35,25 +35,25 @@
     <main class="body-content">
         <section class="hero-image">
             <h2 class="city">Preston Idaho</h2>
-                        <div id=weatherSummary>
-                            <h3 id="summary">Weather Summary</h3>
-                            <p>
-                                <span>Current Temperature: </span>
-                                <span id="currentTemp"></span>
-                            </p>
-                            <p>
-                                <span>High Temp of: </span>
-                                <span id="tempHigh"></span>
-                            </p>
-                            <p>
-                                <span>Windchill: </span>
-                                <span id="windChill"></span>
-                            </p>
-                            <p>
-                                <span>Wind Speed: </span>
-                                <span id="windSpeed"></span>
-                            </p>
-                        </div>
+            <div id=weatherSummary>
+                <h3 id="summary">Weather Summary</h3>
+                <p>
+                    <span>Current Temperature: </span>
+                    <span id="currentTemp"></span>
+                </p>
+                <p>
+                    <span>High Temp of: </span>
+                    <span id="tempHigh"></span>
+                </p>
+                <p>
+                    <span>Windchill: </span>
+                    <span id="windChill"></span>
+                </p>
+                <p>
+                    <span>Wind Speed: </span>
+                    <span id="windSpeed"></span>
+                </p>
+            </div>
             <img src="images/mountainssmall.jpg"
                 srcset="images/idahomountains.jpg 1200w, images/mountainslarge.jpg 800w, images/mountainssmall.jpg 400w"
                 id="hero-img">
@@ -87,46 +87,65 @@
                 </tr>
             </table>
         </section>
-
-        <section class="weather-advisory">
-            <article class="warning">
-                <h2>Warning</h2>
-                <h3>
-                    Weather Advisory
-                </h3>
-                <p>
-                    There are big storms coming this weekend especially on the west side of Targee.
-                    We advise staying inside with your little ones and venturing out next weekend.
-                    If you are caught in the storm and need assistance call 1-800-parents.
-                </p>
-            </article>
-        </section>
-
-        <section class="contact-us">
-
-            <article>
-                <h2>Contact Us</h2>
-                <div class="grid-container">
-                <div>
+        <section class="content-class">
+            <section class="weather-advisory">
+                <article class="warning">
+                    <h2>Warning</h2>
                     <h3>
-                        Little Hitch Hikers
+                        Weather Advisory
                     </h3>
-                    <address>
-                        <p> <strong>Address:</strong> 1234 S, Rexburg, ID 83440</p>
-                        <p><strong>Email:</strong> <a href="##">chel-weather@msn.com</a></p>
-                        <p><strong>Phone:</strong><a href="##">(876) 555-2678</a></p>
-                    </address>
-                </div>
-                <div class="iframe">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7738534444!2d-111.91534445925855!3d42.09974162638193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571256799894!5m2!1sen!2sus"
-                    style="border:0;">
-                </iframe>
-            </div>
-            </div>
-            </article>
-        </section>
+                    <p>
+                        There are big storms coming this weekend especially on the west side of Targee.
+                        We advise staying inside with your little ones and venturing out next weekend.
+                        If you are caught in the storm and need assistance call 1-800-parents.
+                    </p>
+                </article>
+            </section>
 
+            <section class="current-events">
+                <article class="events">
+                    <h2>Currents Events</h2>
+                    <h3>
+                        Breaking News
+                    </h3>
+                    <p>
+                        Two young teens who were hit by a drunk driver are now starting a company that offers
+                        comfort and support to victims and their families. They will be opening the doors August 2020.
+                        All donations will go straight to the cost of medical care for those who are currently healing
+                        or
+                        who are in hospitals now. Their statement, "We hope we can start by spreading hope and comfort
+                        to those
+                        who have suffered these kinds of awful events and hope to make a difference. Maybe we can come
+                        together
+                        to create better laws to protect our loved ones from such catashtrophes."
+                    </p>
+                </article>
+            </section>
+
+            <section class="contact-us">
+                <article>
+                    <h2>Contact Us</h2>
+                    <div class="grid-container">
+                        <h3>
+                            Little Hitch Hikers
+                        </h3>
+                        <address>
+                            <p> <strong>Address:</strong> 1234 S, Rexburg, ID 83440</p>
+                            <p><strong>Email:</strong> <a href="##">chel-weather@msn.com</a></p>
+                            <p><strong>Phone:</strong><a href="##">(876) 555-2678</a></p>
+                        </address>
+                    </div>
+
+                    <div class="iframe">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7738534444!2d-111.91534445925855!3d42.09974162638193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571256799894!5m2!1sen!2sus"
+                            style="border:0;">
+                        </iframe>
+                    </div>
+                </article>
+            </section>
+            
+        </section>
     </main>
 
     <footer>
@@ -134,6 +153,7 @@
     </footer>
     </div>
 
+    <script src="scripts/menu.js"></script>
     <script src="scripts/maindate.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/five-day-forecast.js"></script>
