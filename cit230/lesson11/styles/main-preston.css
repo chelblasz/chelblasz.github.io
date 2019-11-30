@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.background {
+    background-image: url('../images/mountainstorm.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* Header
+__________________________________________________________________________________________________________________________ */
+
+#logo {
+    display: absolute;
+    max-width: 70px;
+    top: 20px;
+    left: 20px;
+}
+
+/* ___________________S__NAV_____________________ */
+
+nav {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: rgb(17, 18, 20);
+}
+
+.navbar-logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 38, 50);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.responsive li {
+    display: block;
+}
+
+/*__________________S__Main Body Content__________________________________ */
+
+/* idaho mountains */
+#hero-img {
+    width: 91%;
+    display: block;
+    margin: 0 auto;
+    border: solid #ffffff 10px;
+    text-align: center;
+}
+
+
+/* preston idaho */
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 1em;
+    background-color: rgba(18, 77, 0, 0.692);
+    color: rgb(255, 255, 255);
+}
+
+#weatherSummary {
+    position: absolute;
+    top: 210px;
+    right: 30px;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    padding: 5px 10px;
+    font-size: 8px;
+    max-width: 150px;
+}
+
+
+/* 5 day forecast */
+.forecast,
+.forecast h3 {
+    display: none;
+}
+
+/*_______________________S__ Warning ______________________________ */
+.weather-advisory {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.726);
+    font-size: 12px;
+    border-radius: 0 15px 15px 15px;
+    margin: 20px;
+    padding: 0 10px 10px 5px;
+}
+
+.weather-advisory h2 {
+    margin-top: 0;
+    background: rgba(18, 77, 0, 0.692);
+    color: #ffffff;
+    max-width: 90px;
+    padding: 5px;
+    border-radius: 0 15px 15px 15px;
+}
+
+/*_____________________S____ contact us______________________________ */
+.contact-us {
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-template-rows: 10 10% 20% 60%;
+    max-width: 800px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.726);
+    font-size: 12px;
+    border-radius: 0 15px 15px 15px;
+    margin: 20px;
+    padding: 0 10px 10px 5px;
+}
+
+.contact-us h2 {
+    margin-top: 0;
+    background: rgba(18, 77, 0, 0.692);
+    color: #ffffff;
+    max-width: 100px;
+    padding: 5px;
+    border-radius: 0 15px 15px 15px;
+}
+
+.contact-us address {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.726);
+    max-width: 300px;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.contact-us iframe {
+    display: grid;
+    margin: 10px;
+    /* border-radius: 5%; */
+    max-width: 250px;
+    max-height: 200px;
+
+}
+
+/* ______________S______Current Events____________________________ */
+ .current-events {
+    display: grid;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.726);
+    font-size: 12px;
+    border-radius: 0 15px 15px 15px;
+    margin: 20px;
+    padding: 0 10px 10px 5px;
+}
+.current-events h2 {
+    margin-top: 0;
+    background: rgba(18, 77, 0, 0.692);
+    color: #ffffff;
+    max-width: 150px;
+    padding: 5px;
+    border-radius: 0 15px 15px 15px;
+} 
+
+/* ___________________________________S__________footer____________________________________________________ */
+footer {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: rgb(0, 0, 0);
+    font-size: 8px;
+    color: #ffffff;
+}
+
+footer p {
+    text-align: center;
+    align-self: flex-end;
+    margin-left: 30%;
+}
+
+/* map */
+iframe {
+    display: none;
+}
+
+/*MEDIUM ______________________________________________________________________________________________________ */
+
+@media screen and (min-width: 32.5em) {
+
+    /*_________________________M_____Header________________________________ */
+
+
+    /* little hitch-hikers */
+    #logo {
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    /* ___________________________M______NAV______________________________________ */
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: #ffffff;
+    }
+
+    /*_______________________M_______Main Body Content_____________________________ */
+
+    /* preston idaho */
+    .city {
+        font-size: 1.5em;
+
+    }
+
+    #weatherSummary {
+        position: absolute;
+        top: 300px;
+        right: 40px;
+    }
+
+
+    /* 5 day forecast */
+    .forecast {
+        display: grid;
+      grid-template-columns: 2fr 4fr;
+        margin: 18px auto;
+        background-color: rgba(255, 255, 255, 0.726);
+        /* border-radius:%; */
+        max-width: 400px;
+        padding: 5px;
+        padding-top: 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .forecast h3 {
+    display: grid;
+    margin-top: 0;
+    background: rgba(18, 77, 0, 0.692);
+    color: #ffffff;
+    padding: 3px;
+    max-width: 150px;
+    max-height: 30px;
+    border-radius: 0 15px 15px 15px;
+    }
+
+
+    .weather-advisory {
+        max-width: 700px;
+        font-size: 15px;
+    }
+
+    .weather-advisory h2 {
+        max-width: 105px;
+    }
+
+
+    .contact-us {
+        max-width: 700px;
+        font-size: 13px;
+    }
+
+    .contact-us h2 {
+        max-width: 120px;
+    }
+
+    .contact-us iframe {
+        display: grid;
+        border-radius: 5%;
+        max-height: 500px;
+    }
+
+    .iframe {
+        text-align: right;
+    }
+
+    /* _____________________M__________footer__________________________________________ */
+
+    footer p {
+        font-size: 12px;
+    }
+
+
+
+}
+
+/* ___________________________LARGE SCREEN___________________________________ */
+@media screen and (min-width: 60em) {
+
+    #weatherSummary {
+        position: absolute;
+        top: 300px;
+        right: 100px;
+        max-width: 300px;
+        font-size: 19px;
+    }
+
+     /* 5 day forecast */
+     .forecast,
+     .forecast h3 {
+         max-width: 800px;
+         font-size: 17px;
+     }
+
+    .content-class {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        
+    }
+
+    .weather-advisory {
+        font-size: 18px;
+        height: 300px;
+    }
+
+    .weather-advisory h2 {
+        max-width: 130px;
+    }
+
+    .contact-us {
+        font-size: 18px;
+        height: 500px;
+    }
+
+    .contact-us h2 {
+        max-width: 160px;
+    }
+
+    .current-events {
+        max-width: 800px;
+        font-size: 18px;
+        height: 300px;
+    }
+
+    .current-events h2 {
+        max-width: 220px;
+       
+    }
+
+}
