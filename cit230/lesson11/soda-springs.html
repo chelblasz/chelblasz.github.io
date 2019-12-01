@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>soda-springs Weather Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/practice.css">
+    <link rel="shortcut icon" href="images/favicon48.png" type="image/x-icon">
+</head>
+
+<body onload="getFiveDayForecast('5607916')" class="background">
+
+
+    <header>
+        <!-- <div id="logo"><a href="#"><img src="images/logo.png" alt="logo"></a>
+        </div> -->
+        <nav>
+            <ul class="navigation">
+                <a href="#"><img id="logo" src="images/logo.png" alt="logo"></a>
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="../lesson9/index.html">Home Page</a></li>
+                <li><a href="../lesson11/preston-10.html">Preston</a></li>
+                <li><a href="../lesson11/soda-springs.html">Soda Springs</a></li>
+                <li><a href="../lesson11/fish-haven.html">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="body-content">
+        <section class="hero-image">
+            <h2 class="city">Soda Springs Idaho</h2>
+            <div id=weatherSummary>
+                <h3 id="summary">Weather Summary</h3>
+                <p>
+                    <span>Current Temperature: </span>
+                    <span id="currentTemp"></span>
+                </p>
+                <p>
+                    <span>High Temp of: </span>
+                    <span id="tempHigh"></span>
+                </p>
+                <p>
+                    <span>Windchill: </span>
+                    <span id="windChill"></span>
+                </p>
+                <p>
+                    <span>Wind Speed: </span>
+                    <span id="windSpeed"></span>
+                </p>
+            </div>
+            <img src="images/mountainssmall.jpg"
+                srcset="images/idahomountains.jpg 1200w, images/mountainslarge.jpg 800w, images/mountainssmall.jpg 400w"
+                id="hero-img">
+            <!-- <picture>
+                                    <source srcset="images/mountainssmall.jpg"
+                                        media="(min-width:100px) and (max-width:799px)">
+                                    <source srcset="images/mountainslarge.jpg" media="(min-width:800px)">
+                                    <img src="../lesson6/images/idahomountains.jpg" alt="Idaho Mountains">
+                    </picture> -->
+
+        </section>
+
+        <section class="forecast">
+            <h3>High Temperature Forecast</h3>
+            <table>
+                <tr>
+                    <td></td>
+                    <th id="day1">Day 1</th>
+                    <th id="day2">Day 2</th>
+                    <th id="day3">Day 3</th>
+                    <th id="day4">Day 4</th>
+                    <th id="day5">Day 5</th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><img id="img1" src="" alt=""></td>
+                    <td><img id="img2" src="" alt=""></td>
+                    <td><img id="img3" src="" alt=""></td>
+                    <td><img id="img4" src="" alt=""></td>
+                    <td><img id="img5" src="" alt=""></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td id="temp1"></td>
+                    <td id="temp2"></td>
+                    <td id="temp3"></td>
+                    <td id="temp4"></td>
+                    <td id="temp5"></td>
+
+                </tr>
+
+            </table>
+        </section>
+        <section class="content-class">
+            <section class="weather-advisory">
+                <article class="warning">
+                    <h2>Warning</h2>
+                    <h3>
+                        Weather Advisory
+                    </h3>
+                    <p>
+                        It will be quite windy this weekend so look out for weather forecasts and stay alert.
+                        If you are caught in the storm and need assistance call 1-800-parents.
+                    </p>
+                </article>
+            </section>
+
+            <section class="current-events">
+                <article class="events">
+                    <h2>Currents Events</h2>
+                    <h3>
+                        Breaking News
+                    </h3>
+                    <p>
+                        Soda Springs now has the largest potato in idaho and Pocatello said they will be investigating shortly.
+                    </p>
+                </article>
+            </section>
+
+            <section class="contact-us">
+                <article>
+                    <h2>Contact Us</h2>
+                    <div class="grid-container">
+                        <h3>
+                            Little Hitch Hikers
+                        </h3>
+                        <address>
+                            <p> <strong>Address:</strong> 1234 S, Rexburg, ID 83440</p>
+                            <p><strong>Email:</strong> <a href="##">chel-weather@msn.com</a></p>
+                            <p><strong>Phone:</strong><a href="##">(876) 555-2678</a></p>
+                        </address>
+                    </div>
+
+                    <div class="iframe">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7738534444!2d-111.91534445925855!3d42.09974162638193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571256799894!5m2!1sen!2sus"
+                            style="border:0;">
+                        </iframe>
+                    </div>
+                </article>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentDate"></span> &star; Chelsea Blaszczyk &star;</p>
+    </footer>
+    </div>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/maindate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/five-day-forecast.js"></script>
+</body>
+
+</html>

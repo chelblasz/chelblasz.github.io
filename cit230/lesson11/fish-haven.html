@@ -5,36 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Preston Weather Page</title>
+    <title>fish-haven Weather Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main-preston.css">
+    <link rel="stylesheet" href="styles/practice.css">
     <link rel="shortcut icon" href="images/favicon48.png" type="image/x-icon">
 </head>
 
-<body class="background">
+<body onload="getFiveDayForecast('5585010')" class="background">
 
 
-    <header class="logo-header">
-        <section>
-            <img id="logo" src="images/logo.png" alt="logo">
-        </section>
+    <header>
+        <!-- <div id="logo"><a href="#"><img src="images/logo.png" alt="logo"></a>
+        </div> -->
+        <nav>
+            <ul class="navigation">
+                <a href="#"><img id="logo" src="images/logo.png" alt="logo"></a>
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="../lesson9/index.html">Home Page</a></li>
+                <li><a href="../lesson11/preston-10.html">Preston</a></li>
+                <li><a href="../lesson11/soda-springs.html">Soda Springs</a></li>
+                <li><a href="../lesson11/fish-haven.html">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="../lesson9/index.html">Home Page</a></li>
-            <li><a href="../lesson11/preston-10.html">Preston</a></li>
-            <li><a href="../lesson11/soda-springs.html">Soda Springs</a></li>
-            <li><a href="../lesson11/fish-haven.html">Fish Haven</a></li>
-            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
-        </ul>
-    </nav>
 
 
     <main class="body-content">
         <section class="hero-image">
-            <h2 class="city">Preston Idaho</h2>
+            <h2 class="city">Fish-Haven Idaho</h2>
             <div id=weatherSummary>
                 <h3 id="summary">Weather Summary</h3>
                 <p>
@@ -70,7 +70,7 @@
             <h3>High Temperature Forecast</h3>
             <table>
                 <tr>
-                        <td></td>
+                    <td></td>
                     <th id="day1">Day 1</th>
                     <th id="day2">Day 2</th>
                     <th id="day3">Day 3</th>
@@ -88,13 +88,13 @@
                 </tr>
 
                 <tr>
-                        <td></td>
+                    <td></td>
                     <td id="temp1"></td>
                     <td id="temp2"></td>
                     <td id="temp3"></td>
                     <td id="temp4"></td>
                     <td id="temp5"></td>
-              
+
                 </tr>
 
             </table>
@@ -107,8 +107,7 @@
                         Weather Advisory
                     </h3>
                     <p>
-                        There are big storms coming this weekend especially on the west side of Targee.
-                        We advise staying inside with your little ones and venturing out next weekend.
+                       fish-haven is going to be raining all week and it may turn to snow after 6pm.
                         If you are caught in the storm and need assistance call 1-800-parents.
                     </p>
                 </article>
