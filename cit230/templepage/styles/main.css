@@ -81,23 +81,82 @@ nav {
 /*__________________S__Main Body Content__________________________________ */
 
 .call-action {
-    max-width: 800px;
-    background: rgba(150, 213, 250, 0.418);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
     font-size: 12px;
-    border-radius: 0 15px 15px 15px;
-    margin: 20px;
     padding: 0 10px 10px 5px;
 }
 
 .call-action h2 {
+    display: flex;
     margin-top: 0;
-    background-color: rgba(89, 99, 102, 0.568);
     color: #000000;
-    max-width: 200px;
     padding: 5px;
-    border-radius: 0 15px 15px 15px;
 }
 
+.room-action {
+    margin-left: 100px;
+    display: flex;
+    align-items: inherit;
+    flex-direction: column;
+}
+
+.hotel-room {
+    max-width: 400px;
+    margin: 10px;
+}
+
+.book-button {
+margin: 40px;
+max-width: 200px;
+font-size: 18px;
+padding: 10px;
+background-color: black;
+color: white;
+}
+/* Second call to explore option */
+.call-action2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 0 10px 10px 5px;
+}
+
+.call-action2 h2 {
+    display: flex;
+    margin-top: 0;
+    color: #000000;
+    padding: 5px;
+}
+
+.room-action2 {
+    margin-right: 100px;
+    display: flex;
+    align-items: inherit;
+    flex-direction: column;
+}
+
+.hotel-room2 {
+    max-width: 400px;
+    margin: 10px;
+}
+
+.search-button {
+margin: 40px;
+max-width: 200px;
+font-size: 18px;
+padding: 10px;
+background-color: black;
+color: white;
+}
 /*____________ The Service Tabs___________ */
 
 h1 {
