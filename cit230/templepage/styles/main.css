@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga&display=swap');
+
+body {
+    font-family: 'Calistoga', cursive;
+    background-color: rgb(255, 255, 255);
+    /* min-height: 2000px; */
+}
+
+.background {
+    background-image: url('../images/payson.jpg');
+    min-height: 675px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2 {
+    background-image: url('../images/hotel3.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* __________________________Header__________________________________*/
+
+/* _____________________________S__NAV_______________________________ */
+
+/* _____________________________S__NAV________________________________ */
+
+nav {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: rgb(17, 18, 20);
+}
+
+.navbar-logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #000000;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 38, 50);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.responsive li {
+    display: block;
+}
+
+/*__________________S__Main Body Content__________________________________ */
+
+.call-action {
+    max-width: 800px;
+    background: rgba(150, 213, 250, 0.418);
+    font-size: 12px;
+    border-radius: 0 15px 15px 15px;
+    margin: 20px;
+    padding: 0 10px 10px 5px;
+}
+
+.call-action h2 {
+    margin-top: 0;
+    background-color: rgba(89, 99, 102, 0.568);
+    color: #000000;
+    max-width: 200px;
+    padding: 5px;
+    border-radius: 0 15px 15px 15px;
+}
+
+/*____________ The Service Tabs___________ */
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    float: left;
+    margin: 20px 0 100px 10px;
+}
+
+span {
+    font-size: 13px;
+    display: block;
+    padding-left: 4px;
+}
+
+.tabs {
+    width: 650px;
+    background: #fff8d2;
+    float: none;
+    list-style: none;
+    position: relative;
+    margin: 80px 0 0 10px;
+    text-align: left;
+}
+
+li {
+    float: left;
+    display: block;
+}
+
+input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: #fff5c9;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+label:hover {
+    background: #eaff7093;
+}
+
+a:active {
+    background-color: #ffe8a9;
+}
+
+.tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 190%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;
+    position: absolute;
+    /* top: 53px; */
+    left: 0;
+    background: #fff2b793;
+}
+
+/* The Magic */
+
+/* [id^="tab"]:checked+label {
+    top: 0;
+    padding-top: 17px;
+    background: darken;
+} */
+
+[id^="tab"]:checked~[id^="tab-content"] {
+    display: block;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #fff4d2;
+    transition: background-color 0.2s ease;
+}
+
+a:hover {
+    background-color: darken(tabs-base-color, 20);
+}
+
+.hotel  {
+    max-width: 400px;
+}
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 14px;
+    width:10px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+  }
+
+
+
+/* _________________S__________footer______________________________________ */
+footer {
+    background-color: black;
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1500px;
+    /* position: absolute;
+    bottom: 0; */
+    /* margin-top: 2000px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 8px;
+     */
+}
+
+
+
+/*MEDIUM ______________________________________________________________________________________________________ */
+
+@media screen and (min-width: 32.5em) {
+
+    /*_________________________M_____Header________________________________________ */
+
+
+    /* ________________________M______NAV__________________________________________ */
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /*___________________________M_______Main Body Content_____________________________ */
+
+
+    /* __________________________M__________footer______________________________________ */
+
+
+
+}
+
+/* ___________________________LARGE SCREEN___________________________________ */
+@media screen and (min-width: 60em) {}

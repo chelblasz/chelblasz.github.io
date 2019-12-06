@@ -1,0 +1,151 @@
+<!-- The services page provides a list with information
+of the amenities and special services offered at the hotel
+along with the following sub pages/content:
+The reception page displaying information about the wedding
+reception accommodations, including options for food service 
+and setup. A full-time temple missionary page that provides 
+information and images about the suites offered at the hotel 
+with a simple Contact Us form for more details.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple inn and suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/templeicon.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="background"></div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="../templepage/index.html">Home Page</a></li>
+                <li><a href="../templepage/temples.html">Temples</a></li>
+                <li><a href="../templepage/reservations.html">Reservations</a></li>
+                <li><a href="../templepage/services.html">Services</a></li>
+                <li><a href="../templepage/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background2"></div>
+        <ul class="tabs" role="tablist">
+            <li>
+                <input type="radio" name="tabs" id="tab1" checked />
+                <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Reception
+                    Reservation</label>
+                <div id="tab-content1" class="tab-content" role="tabpanel" aria-labelledby="description"
+                    aria-hidden="false">
+                    <section id="formSection">
+                        <div>
+                            <label for="fullName">Full Name:</label>
+                            <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
+                        </div>
+                        <div>
+                            <label for="email">Enter Your Email:</label>
+                            <input type="email" id="email" name="email" placeholder="myemail@email.com" required>
+                        </div>
+                        <div>
+                            <label for="number">Enter Your Phone Number:</label>
+                            <input type="tel" id="number" name="number" required>
+                        </div>
+                        <div>
+                            <label for="recepDate">Enter Your Reception Date:</label>
+                            <input type="date" id="recepDate" name="recepDate" required>
+                        </div>
+
+                        <div>
+                            <label for="catering">Catering:</label>
+                            <input list="catering">
+                            <datalist id="catering">
+                                <option value="Mexican Mini Tacos">
+                                <option value="Traditional American Sliders">
+                                <option value="Vietnamese Sliders">
+                                <option value="Meat, Grape, and Veggie selection">
+                                <option value="Sweets Bar">
+                                <option value="NONE N/A">
+                            </datalist>
+                        </div>
+                        <section id="setUp">
+                            <label class="setUp">Will we be providing set up and take down?</label>
+                            <div class="radioBox">
+                                <label class="container">Yes
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">No
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </section>
+
+                        <div>
+                            <div> <label class="alignmentCom" for="setUp">Comments:</label></div>
+                            <div><textarea name="comments" id="comments" cols="60" rows="10"></textarea></div>
+                        </div>
+
+                        <div>
+                            <input type="reset" id="reset" name="reset">
+                            <input type="submit" id="submit" name="submit">
+
+                        </div>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="tabs" id="tab2" />
+                <label for="tab2" role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">Full-time
+                    Missionaries</label>
+                <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="specification"
+                    aria-hidden="true">
+                    <div class="hotel">
+                        <img class="hotel" src="../templepage/images/hotel1.jpg" alt="hotelRm1">
+                        <img class="hotel" src="../templepage/images/hotel2.jpg" alt="hotelRm2">
+                        <img class="hotel" src="../templepage/images/hotel4.jpg" alt="hotelRm3">
+                        <img class="hotel" src="../templepage/images/hotel5.jpg" alt="hotelRm4">
+                    </div>
+                    <div>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
+                    </div>
+                    <div>
+                        <label for="email">Enter Your Email:</label>
+                        <input type="email" id="email" name="email" placeholder="myemail@email.com" required>
+                    </div>
+                    <div>
+                        <label for="number">Enter Your Phone Number:</label>
+                        <input type="tel" id="number" name="number" required>
+                    </div>
+
+                    <div>
+                        <div> <label class="alignmentCom" for="setUp">Comments and questions:</label></div>
+                        <div><textarea name="comments" id="comments" cols="60" rows="10"></textarea></div>
+                    </div>
+                    <div>
+                        <input type="reset" id="reset" name="reset">
+                        <input type="submit" id="submit" name="submit">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <!-- <footer>
+        <p>&copy; <span id="currentDate"></span> &star; Chelsea Blaszczyk &star; Temple Inn & Suites</p>
+    </footer> -->
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/maindate.js"></script>
+</body>
+
+</html>
