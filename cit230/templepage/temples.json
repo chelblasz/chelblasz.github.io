@@ -1,55 +1,172 @@
-{
-    "towns": [
+
+ [
       {
-        "name": "Franklin",
-        "photo": "franklin.jpg",
-        "motto": "Where you will grow!",
-        "yearFounded": 1788,
-        "currentPopulation": 30458,
-        "averageRainfall": 21,
-        "events": [
-          "March 4: March to the Drum of Donuts",
-          "September 5 - 11: Founder Days",
-          "December 1 - 26: Christmas in the Heart"
+        "name": "Payson Utah Temple",
+        "photo": "https://assets.ldscdn.org/ae/1d/ae1dfd71443c7033e8407716704ea4f78a53cfce/595590aa805080f86e63368963860d9f3dfb3bfd.jpg",
+        "address": "1494 S 930 W Payson, UT 84651",
+        "telephone": "+1-801-754-4949",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+          ],
+          "ordinance-schedule": [
+            "7:00 AM Walk-ins Only",
+            "7:40 AM Walk-ins Only",
+            "8:20 AM Walk-ins Only",
+            "9:00 AM Walk-ins Only",
+            "9:40 AM Walk-ins Only",
+            "10:20 AM Walk-ins Only",
+            "11:00 AM Walk-ins Only",
+            "11:40 AM Walk-ins Only",
+            "12:20 PM Walk-ins Only",
+            "1:00 PM Walk-ins Only",
+            "1:40 PM Walk-ins Only",
+            "2:20 PM Walk-ins Only",
+            "3:00 PM Walk-ins Only",
+            "3:40 PM Walk-ins Only",
+            "4:20 PM Walk-ins Only",
+            "5:00 PM Walk-ins Only",
+            "5:40 PM Walk-ins Only",
+            "6:20 PM Walk-ins Only",
+            "7:00 PM Walk-ins Only",
+            "7:40 PM Walk-ins Only"
+        ],
+        " temple-closure-schedule": [
+            "Wednesday, 1 January 2020",
+            "Saturday, 4 April 2020",
+            "Monday, 6 April 2020 - Monday, 20 April 2020",
+            "Saturday, 4 July 2020",
+            "Friday, 24 July 2020",
+            "Saturday, 3 October 2020",
+            "Monday, 19 October 2020 - Monday, 2 November 2020",
+            "Wednesday, 25 November 2020 (Limited Hours)",
+            "Thursday, 26 November 2020",
+            "Wednesday, 23 December 2020 (Limited Hours)",
+            "Thursday, 24 December 2020 - Friday, 25 December 2020",
+            "Thursday, 31 December 2020"
+        ],
+        "history": [
+            "Milestones",
+            "25 January 2010 - Announced",
+            "8 October 2011 - Groundbreaking",
+            "7 June 2015 Dedicated — dedicatory prayer"
+        ]
+      
+      },
+      {
+        "name": "Mérida Mexico Temple",
+        "photo": "https://assets.ldscdn.org/1a/82/1a828439842b878c046d3c0b5b0b079bff2e380b/merida_mexico_temple_lds.png",
+        "address": "Calle 70 #527, Esq 65 y 67 Col. Centro 97000 Mérida, Yucatan, Mexico",
+        "telephone": "52-999-928-1643",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+          ],
+        "ordinance-schedule": [
+            "8:00 AM Walk-ins and Appointments",
+            "10:00 AM Walk-ins and Appointments",
+            "4:30 PM Walk-ins and Appointments",
+            "6:00 PM Walk-ins and Appointments",
+            "7:30 PM Walk-ins and Appointments"
+        ],
+        " temple-closure-schedule": [
+            "Wednesday, 1 January 2020",
+            "Monday, 13 January 2020 - Monday, 27 January 2020",
+            "Saturday, 4 April 2020",
+            "Monday, 6 July 2020 - Monday, 20 July 2020",
+            "Saturday, 3 October 2020",
+            "Thursday, 24 December 2020 (Limited Hours)",
+            "Friday, 25 December 2020",
+            "Thursday, 31 December 2020 (Limited Hours)"
+        ],
+        "history": [
+            "Milestones",
+            "25 September 1998 - Announced",
+            "16 January 1999 - Groundbreaking",
+            "8 July 2000 - Dedicated — dedicatory prayer"
         ]
       },
       {
-        "name": "Fish Haven",
-        "photo": "fishhaven.jpg",
-        "motto": "This is Fish Heaven.",
-        "yearFounded": 1864,
-        "currentPopulation": 501,
-        "averageRainfall": 14.20,
-        "events": [
-          "April 1: How Big Was That Fish Day",
-          "May 15-30: Rush the Creek Days",
-          "July 24: Bear Lake Blunder Run",
-          "December 12: Light the Tree"
+        "name": "Bern Switzerland Temple",
+        "photo": "https://assets.ldscdn.org/7d/5f/7d5f97f4fbab9ce2fff41f58e612821e8e9da705/bern_switzerland_temple_lds.jpeg",
+        "address": "Tempelstrasse 2 CH-3052 Zollikofen, Switzerland",
+        "telephone": "41-31-915-5252",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+          ],
+          "ordinance-schedule": [
+            "8:00 AM Walk-ins and Appointments",
+            "10:00 AM Walk-ins and Appointments",
+            "1:30 PM Walk-ins and Appointments",
+            "2:00 PM Walk-ins and Appointments",
+            "3:30 PM Walk-ins and Appointments"
+        ],
+        " temple-closure-schedule": [
+            "Wednesday, 1 January 2020",
+            "Monday, 13 January 2020 - Monday, 27 January 2020",
+            "Saturday, 4 April 2020",
+            "Monday, 6 July 2020 - Monday, 20 July 2020",
+            "Saturday, 3 October 2020",
+            "Thursday, 24 December 2020 (Limited Hours)",
+            "Friday, 25 December 2020",
+            "Thursday, 31 December 2020 (Limited Hours)"
+        ],
+      
+        "history": [
+            "Milestones",
+            "25 September 1998 - Announced",
+            "16 January 1999 - Groundbreaking",
+            "8 July 2000 - Dedicated — dedicatory prayer"
         ]
       },
       {
-        "name": "Greenville",
-        "photo": "greenville.jpg",
-        "motto": "Green is our way of life.",
-        "yearFounded": 1805,
-        "currentPopulation": 33458,
-        "averageRainfall": 25,
-        "events": [
-          "February 10-12: Greenbration",
-          "May 8 - 18: Greenville Founder Days",
-          "June 20: Verde and Valiant Day",
-          "November 15-16: Greensome Gathering"
+        "name": "Cardston Alberta Temple",
+        "photo": "https://assets.ldscdn.org/ac/22/ac22473411424a202b0b89983905de90371f5eb6/cardston_alberta_temple_lds.jpg",
+        "address": "348 3rd St W Cardston AB T0K 0K0 Canada",
+        "telephone": "1-403-653-3552",
+        "services": [
+            "Clothing rental available",
+            "Cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+          ],
+          "ordinance-schedule": [
+            "9:30 AM Walk-ins Only",
+            "10:30 AM Walk-ins Only",
+            "12:00 PM Walk-ins Only",
+            "1:00 PM Walk-ins Only",
+            "3:30 PM Walk-ins Only",
+            "4:30 PM Walk-ins Only",
+            "5:30 PM Walk-ins Only",
+            "7:00 PM Walk-ins Only"
+        ],
+        " temple-closure-schedule": [
+            "Wednesday, 1 January 2020",
+            "Monday, 13 January 2020 - Monday, 27 January 2020",
+            "Saturday, 4 April 2020",
+            "Monday, 3 August 2020 - Monday, 17 August 2020",
+            "Saturday, 3 October 2020",
+            "Wednesday, 11 November 2020",
+            "Thursday, 24 December 2020",
+            "Friday, 25 December 2020",
+            "Saturday, 26 December 2020",
+            "Thursday, 31 December 2020"
+        ],
+        "history": [
+            "Milestones",
+            "27 June 1913 - Announced",
+            "27 July 1913 - Groundbreaking",
+            "26 August 1923 Dedicated — dedicatory prayer",
+            "2 July 1962 - Rededicated — dedicatory prayer",
+            "22 June 1991 - Rededicated — dedicatory prayer"
         ]
-      },
-      {
-        "name": "Placerton",
-        "photo": "placerton.jpg",
-        "motto": "Positive Placement in Placerton.",
-        "yearFounded": 1946,
-        "currentPopulation": 512,
-        "averageRainfall": 39,
-        "events": [
-          "July 4: A Blaze of Glory",
-          "October 20: Fall through Fall"
-        ]
-      },
+      
+      }
+    ]
