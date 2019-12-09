@@ -3,7 +3,6 @@
 body {
     font-family: 'Calistoga', cursive;
     background-color: rgb(255, 255, 255);
-    /* min-height: 2000px; */
 }
 
 .background {
@@ -80,6 +79,7 @@ nav {
 
 /*__________________S__Main Body Content__________________________________ */
 
+/* ___________________________HOME PAGE_______________________________ */
 .call-action {
     margin-top: 100px;
     display: flex;
@@ -157,6 +157,39 @@ padding: 10px;
 background-color: black;
 color: white;
 }
+
+.amenities_box {
+background-color: rgb(0, 0, 0);
+color: white;
+padding: 5px 10px;
+border-radius: 10px 10px 10px 10px;
+margin: 100px;
+}
+.amenities {
+margin: 40px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+justify-content: space-between;
+}
+
+.amenities_box p{
+    font-size: 24px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    } 
+
+.icon {
+    max-width: 90px;
+    border-radius: 15%;
+}
+/* __________________________End Of HOME PAGE____________________________________ */
+
+/* ____________________________SERVICES PAGE________________________ */
+
 /*____________ The Service Tabs___________ */
 
 h1 {
@@ -312,27 +345,32 @@ a:hover {
     background: rgb(0, 0, 0);
   }
 
-
+/*________________________________ END OF SERVICES PAGE________________________ */
 
 /* _________________S__________footer______________________________________ */
-footer {
+.background3 {
     background-color: black;
-    min-height: 100px;
+    min-height: 70px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 1500px;
-    /* position: absolute;
-    bottom: 0; */
-    /* margin-top: 2000px;
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    font-size: 8px;
-     */
+}
+
+.footer_link {
+background-color: black;
+color: white;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+footer p{
+color: white;
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-bottom: 10px;
 }
 
 
@@ -369,4 +407,114 @@ footer {
 }
 
 /* ___________________________LARGE SCREEN___________________________________ */
-@media screen and (min-width: 60em) {}
+@media screen and (min-width: 60em) {
+    /* ___________________________HOME PAGE_______________________________ */
+.call-action {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 0 10px 10px 5px;
+}
+
+.call-action h2 {
+    display: flex;
+    margin-top: 0;
+    color: #000000;
+    padding: 5px;
+}
+
+.room-action {
+    margin-left: 100px;
+    display: flex;
+    align-items: inherit;
+    flex-direction: column;
+}
+
+.hotel-room {
+    max-width: 400px;
+    margin: 10px;
+}
+
+.book-button {
+margin: 40px;
+max-width: 200px;
+font-size: 18px;
+padding: 10px;
+background-color: black;
+color: white;
+}
+/* Second call to explore option */
+.call-action2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 0 10px 10px 5px;
+}
+
+.call-action2 h2 {
+    display: flex;
+    margin-top: 0;
+    color: #000000;
+    padding: 5px;
+}
+
+.room-action2 {
+    margin-right: 100px;
+    display: flex;
+    align-items: inherit;
+    flex-direction: column;
+}
+
+.hotel-room2 {
+    max-width: 400px;
+    margin: 10px;
+}
+
+.search-button {
+margin: 40px;
+max-width: 200px;
+font-size: 18px;
+padding: 10px;
+background-color: black;
+color: white;
+}
+
+.amenities_box {
+background-color: rgb(0, 0, 0);
+color: white;
+padding: 5px 10px;
+border-radius: 10px 10px 10px 10px;
+margin: 100px;
+}
+.amenities {
+margin: 40px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+justify-content: space-between;
+}
+
+.amenities_box p{
+    font-size: 24px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    } 
+
+.icon {
+    max-width: 90px;
+    border-radius: 15%;
+}
+/* __________________________End Of HOME PAGE____________________________________ */
+
+}
