@@ -7,7 +7,7 @@ body {
 
 .background {
     background-image: url('../images/payson.jpg');
-    min-height: 665px;
+    min-height: 680px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,15 +56,16 @@ nav {
 }
 
 .navigation a {
-    color: #000000;
+    color:white;
     /* padding: 0.75rem; */
     text-align: center;
     text-decoration: none;
 }
 
 .navigation a:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(66, 38, 50);
+    color: black;
+    background-color: white;
+    padding: 40px;
     font-weight: 700;
     font-size: 20px;
 }
@@ -75,7 +76,7 @@ nav {
 
 /*__________________S__Main Body Content__________________________________ */
 
-/* ___________________________HOME PAGE_______________________________ */
+/* __________________S_________HOME PAGE_______________________________ */
 .call-action {
     margin-top: 100px;
     display: flex;
@@ -85,6 +86,7 @@ nav {
     overflow: hidden;
     font-size: 12px;
     padding: 0 10px 10px 5px;
+    text-align: center;
 }
 
 .call-action h2 {
@@ -93,6 +95,7 @@ nav {
     color: #000000;
     font-size: 18px;
     padding: 5px;
+    text-align: center;
 }
 
 .room-action {
@@ -116,6 +119,10 @@ nav {
     color: white;
 }
 
+.book-button:hover {
+    background: rgb(170, 76, 14);
+ }
+
 /* Second call to explore option */
 .call-action2 {
     margin-top: 100px;
@@ -126,6 +133,7 @@ nav {
     overflow: hidden;
     font-size: 12px;
     padding: 0 10px 10px 5px;
+    text-align: center;
 }
 
 .call-action2 h2 {
@@ -134,6 +142,7 @@ nav {
     color: #000000;
     font-size: 18px;
     padding: 5px;
+    text-align: center;
 }
 
 .room-action2 {
@@ -154,7 +163,15 @@ nav {
     font-size: 12px;
     padding: 10px;
     background-color: black;
+}
+
+.search-button a {
+    list-style: none;
+    text-decoration: none;
     color: white;
+}
+.search-button:hover {
+   background: rgb(170, 76, 14);
 }
 
 .amenities_box {
@@ -167,10 +184,10 @@ nav {
 
 .amenities {
     margin: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 .amenities_box p {
@@ -188,11 +205,11 @@ nav {
     margin: 5px;
 }
 
-/* __________________________End Of HOME PAGE____________________________________ */
+/* ______________S____________End Of HOME PAGE____________________________________ */
 
-/* ____________________________SERVICES PAGE________________________ */
+/* _______________S_____________SERVICES PAGE________________________ */
 
-/*____________ The Service Tabs___________ */
+/*_____S_______ The Service Tabs___________ */
 
 h1 {
     font-weight: normal;
@@ -277,7 +294,7 @@ a:active {
     display: block;
 }
 
-a {
+/* a {
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -287,7 +304,7 @@ a {
     background-color: #fff4d2;
     border-radius: 10px;
     transition: background-color 0.2s ease;
-}
+} */
 
 a:hover {
     background-color: darken(tabs-base-color, 20);
@@ -349,7 +366,28 @@ a:hover {
     background: rgb(0, 0, 0);
 }
 
-/*________________________________ END OF SERVICES PAGE________________________ */
+/*_________________S_______________ END OF SERVICES PAGE________________________ */
+
+/* ________________________CONTACT PAGE________________________ */
+
+.contact-us h2{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    background: white;
+    font-size: 17px;
+    margin: 20px;
+}
+.contact-us {
+    display: flex;
+    justify-content: center;
+    background: cornflowerblue;
+    font-size: 12px;
+    max-width: 700px;
+    margin: 50px;
+}
+
+
 
 /* _________________S__________footer______________________________________ */
 .background3 {
@@ -402,6 +440,28 @@ footer p {
     }
 
     /*___________________________M_______Main Body Content_____________________________ */
+    .call-action h2 {
+        font-size: 20px;
+     }
+    .hotel-room {
+        max-width: 300px;
+    }
+    .book-button {
+        margin: 40px;
+        font-size: 18px;
+    }
+    .call-action2 h2 {
+        font-size: 20px;
+     }
+     .hotel-room2 {
+        max-width: 300px;
+    }
+    .search-button {
+        font-size: 20px;
+    }
+    .amenities {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
 
     /* __________________________M__________footer______________________________________ */
@@ -413,116 +473,20 @@ footer p {
 /* ___________________________LARGE SCREEN___________________________________ */
 @media screen and (min-width: 60em) {
 
-    /* ___________________________HOME PAGE_______________________________ */
-    .call-action {
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        overflow: hidden;
-        font-size: 12px;
-        padding: 0 10px 10px 5px;
-    }
+    /* __________________L_________HOME PAGE_______________________________ */
 
-    .call-action h2 {
-        display: flex;
-        margin-top: 0;
-        color: #000000;
-        padding: 5px;
-    }
-
-    .room-action {
-        margin-left: 100px;
-        display: flex;
-        align-items: inherit;
-        flex-direction: column;
-    }
 
     .hotel-room {
-        max-width: 400px;
-        margin: 10px;
-    }
-
-    .book-button {
-        margin: 40px;
-        max-width: 200px;
-        font-size: 18px;
-        padding: 10px;
-        background-color: black;
-        color: white;
-    }
-
-    /* Second call to explore option */
-    .call-action2 {
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        overflow: hidden;
-        font-size: 12px;
-        padding: 0 10px 10px 5px;
-    }
-
-    .call-action2 h2 {
-        display: flex;
-        margin-top: 0;
-        color: #000000;
-        padding: 5px;
-    }
-
-    .room-action2 {
-        margin-right: 100px;
-        display: flex;
-        align-items: inherit;
-        flex-direction: column;
+        max-width: 500px;
     }
 
     .hotel-room2 {
-        max-width: 400px;
-        margin: 10px;
-    }
-
-    .search-button {
-        margin: 40px;
-        max-width: 200px;
-        font-size: 18px;
-        padding: 10px;
-        background-color: black;
-        color: white;
-    }
-
-    .amenities_box {
-        background-color: rgb(0, 0, 0);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 10px 10px 10px 10px;
-        margin: 100px;
+        max-width: 500px;
     }
 
     .amenities {
-        margin: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        };
     }
 
-    .amenities_box p {
-        font-size: 24px;
-        margin: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .icon {
-        max-width: 90px;
-        border-radius: 15%;
-    }
-
-    /* __________________________End Of HOME PAGE____________________________________ */
-
-}
+    /* _________________L_________End Of HOME PAGE____________________________________ */

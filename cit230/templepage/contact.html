@@ -3,49 +3,90 @@
      showing the company headquarter address at 4800 Montgomery Ln #300, Bethesda, MD 20814
       and a basic Contact Us form.  -->
 
-      <!DOCTYPE html>
-      <html lang="en">
-      
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <title>Temple inn and suites</title>
-          <link rel="stylesheet" href="styles/normalize.css">
-          <link rel="stylesheet" href="styles/main.css">
-          <link rel="shortcut icon" href="images/templeicon.jpg" type="image/x-icon">
-      
-      </head>
-      
-      <body>
-      
-          <header>
-              <div class="background"></div>
-              <nav>
-                  <ul class="navigation">
-                        <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
-                      <li><a href="../templepage/index.html">Home Page</a></li>
-                      <li><a href="../templepage/temples.html">Temples</a></li>
-                      <li><a href="../templepage/reservations.html">Reservations</a></li>
-                      <li><a href="../templepage/services.html">Services</a></li>
-                      <li><a href="../templepage/contact.html">Contact</a></li>
-                  </ul>
-              </nav>
-          </header>
-      <div class="background2"></div>
-          <main>
+<!DOCTYPE html>
+<html lang="en">
 
-          </main>
-      
-          <div class="background3">
-                <footer>
-                    <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
-                    <p> <span id="currentDate"></span></p>
-                </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple inn and suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/templeicon.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="background"></div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="../templepage/index.html">Home Page</a></li>
+                <li><a href="../templepage/temples.html">Temples</a></li>
+                <li><a href="../templepage/reservations.html">Reservations</a></li>
+                <li><a href="../templepage/services.html">Services</a></li>
+                <li><a href="../templepage/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background2"></div>
+    <main>
+        <section class="contact-form">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
+        </div>
+        <div>
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="myemail@email.com" required>
+        </div>
+        <div>
+            <label for="number">Enter Your Phone Number:</label>
+            <input type="tel" id="number" name="number" required>
+        </div>
+        <div>
+            <label for="contact-type">Best Way to contact you:</label>
+            <input list="contact-type">
+            <datalist id="contact-type">
+                <option value="Text">
+                <option value="Call">
+                <option value="Email">
+            </datalist>
+        </div>
+    </section>
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <div>
+                <h3>
+                    Temple Inn & Suites
+                </h3>
+                <address>
+                    <p> <strong>Address:</strong> 4800 Montgomery Ln, Bethesda, MD 20814</p>
+                    <p><strong>Email:</strong> <a href="##">templeInnandsuites@gmail.com</a></p>
+                    <p><strong>Phone:</strong><a href="##">(876) 555-2678</a></p>
+                </address>
             </div>
-      
-          <script src="scripts/menu.js"></script>
-          <script src="scripts/maindate.js"></script>
-      </body>
-      
-      </html>
+        </section>
+
+        <div class="iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050188057963!2d-77.0955318!3d38.9832518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1575953976923!5m2!1sen!2sus"
+                width="100%" height="300" frameborder="0" style="border:0;" margin="100px" allowfullscreen=""></iframe>
+        </div>
+    </main>
+
+    <div class="background3">
+        <footer>
+            <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
+            <p> <span id="currentDate"></span></p>
+        </footer>
+    </div>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/maindate.js"></script>
+</body>
+
+</html>
