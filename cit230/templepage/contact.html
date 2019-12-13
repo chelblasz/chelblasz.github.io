@@ -33,41 +33,44 @@
         </nav>
     </header>
     <div class="background2"></div>
-    <main>
+    <main class="contactPage">
         <section class="contact-form">
-        <div>
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
-        </div>
-        <div>
-            <label for="email">Enter Your Email:</label>
-            <input type="email" id="email" name="email" placeholder="myemail@email.com" required>
-        </div>
-        <div>
-            <label for="number">Enter Your Phone Number:</label>
-            <input type="tel" id="number" name="number" required>
-        </div>
-        <div>
-            <label for="contact-type">Best Way to contact you:</label>
-            <input list="contact-type">
-            <datalist id="contact-type">
-                <option value="Text">
-                <option value="Call">
-                <option value="Email">
-            </datalist>
-        </div>
-    </section>
+            <div>
+                <h2>Let us Contact You</h2>
+            </div>
+            <div>
+                <label class="contact-label" for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" size="27" required>
+            </div>
+            <div>
+                <label class="contact-label" for="email">Enter Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="myemail@email.com" size="27" required>
+            </div>
+            <div>
+                <label class="contact-label" for="number">Enter Your Phone Number:</label>
+                <input type="tel" id="number" name="number" placeholder="+1 (801) 555-555" size="27" required>
+            </div>
+            <div>
+                <label class="contact-label" for="contact-type">Best Way to contact you:</label>
+                <input list="contact-type" size="27">
+                <datalist id="contact-type">
+                    <option value="Text">
+                    <option value="Call">
+                    <option value="Email">
+                </datalist>
+            </div>
+        </section>
         <section class="contact-us">
             <h2>Contact Us</h2>
             <div>
                 <h3>
                     Temple Inn & Suites
                 </h3>
-                <address>
-                    <p> <strong>Address:</strong> 4800 Montgomery Ln, Bethesda, MD 20814</p>
-                    <p><strong>Email:</strong> <a href="##">templeInnandsuites@gmail.com</a></p>
-                    <p><strong>Phone:</strong><a href="##">(876) 555-2678</a></p>
-                </address>
+                <span class="emailInfo">
+                    <p>Address: 4800 Montgomery Ln, Bethesda, MD 20814</p>
+                    <p>Email: <a href="##">templeInnandsuites@gmail.com</a></p>
+                    <p>Phone: <a href="##">(876) 555-2678</a></p>
+                </span>
             </div>
         </section>
 

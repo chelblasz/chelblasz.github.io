@@ -1,8 +1,8 @@
-
- [
+{
+  "temples": [
       {
         "name": "Payson Utah Temple",
-        "photo": "https://assets.ldscdn.org/ae/1d/ae1dfd71443c7033e8407716704ea4f78a53cfce/595590aa805080f86e63368963860d9f3dfb3bfd.jpg",
+        "photo": "../images/payson.jpg",
         "address": "1494 S 930 W Payson, UT 84651",
         "telephone": "+1-801-754-4949",
         "services": [
@@ -11,7 +11,7 @@
             "No patron housing available",
             "Distribution center nearby"
           ],
-          "ordinance-schedule": [
+          "ordinanceSchedule": [
             "7:00 AM Walk-ins Only",
             "7:40 AM Walk-ins Only",
             "8:20 AM Walk-ins Only",
@@ -33,7 +33,7 @@
             "7:00 PM Walk-ins Only",
             "7:40 PM Walk-ins Only"
         ],
-        " temple-closure-schedule": [
+        "templeClosureSchedule": [
             "Wednesday, 1 January 2020",
             "Saturday, 4 April 2020",
             "Monday, 6 April 2020 - Monday, 20 April 2020",
@@ -57,7 +57,7 @@
       },
       {
         "name": "Mérida Mexico Temple",
-        "photo": "https://assets.ldscdn.org/1a/82/1a828439842b878c046d3c0b5b0b079bff2e380b/merida_mexico_temple_lds.png",
+        "photo": "../images/merida.jpg",
         "address": "Calle 70 #527, Esq 65 y 67 Col. Centro 97000 Mérida, Yucatan, Mexico",
         "telephone": "52-999-928-1643",
         "services": [
@@ -66,14 +66,14 @@
             "No patron housing available",
             "Distribution center nearby"
           ],
-        "ordinance-schedule": [
+        "ordinanceSchedule": [
             "8:00 AM Walk-ins and Appointments",
             "10:00 AM Walk-ins and Appointments",
             "4:30 PM Walk-ins and Appointments",
             "6:00 PM Walk-ins and Appointments",
             "7:30 PM Walk-ins and Appointments"
         ],
-        " temple-closure-schedule": [
+        "templeClosureSchedule": [
             "Wednesday, 1 January 2020",
             "Monday, 13 January 2020 - Monday, 27 January 2020",
             "Saturday, 4 April 2020",
@@ -92,7 +92,7 @@
       },
       {
         "name": "Bern Switzerland Temple",
-        "photo": "https://assets.ldscdn.org/7d/5f/7d5f97f4fbab9ce2fff41f58e612821e8e9da705/bern_switzerland_temple_lds.jpeg",
+        "photo": "../images/bern.jpeg",
         "address": "Tempelstrasse 2 CH-3052 Zollikofen, Switzerland",
         "telephone": "41-31-915-5252",
         "services": [
@@ -101,14 +101,14 @@
             "No patron housing available",
             "Distribution center nearby"
           ],
-          "ordinance-schedule": [
+          "ordinanceSchedule": [
             "8:00 AM Walk-ins and Appointments",
             "10:00 AM Walk-ins and Appointments",
             "1:30 PM Walk-ins and Appointments",
             "2:00 PM Walk-ins and Appointments",
             "3:30 PM Walk-ins and Appointments"
         ],
-        " temple-closure-schedule": [
+        "templeClosureSchedule": [
             "Wednesday, 1 January 2020",
             "Monday, 13 January 2020 - Monday, 27 January 2020",
             "Saturday, 4 April 2020",
@@ -128,7 +128,7 @@
       },
       {
         "name": "Cardston Alberta Temple",
-        "photo": "https://assets.ldscdn.org/ac/22/ac22473411424a202b0b89983905de90371f5eb6/cardston_alberta_temple_lds.jpg",
+        "photo": "../images/cardston.jpg",
         "address": "348 3rd St W Cardston AB T0K 0K0 Canada",
         "telephone": "1-403-653-3552",
         "services": [
@@ -137,7 +137,7 @@
             "No patron housing available",
             "Distribution center nearby"
           ],
-          "ordinance-schedule": [
+          "ordinanceSchedule": [
             "9:30 AM Walk-ins Only",
             "10:30 AM Walk-ins Only",
             "12:00 PM Walk-ins Only",
@@ -147,7 +147,7 @@
             "5:30 PM Walk-ins Only",
             "7:00 PM Walk-ins Only"
         ],
-        " temple-closure-schedule": [
+        "templeClosureSchedule": [
             "Wednesday, 1 January 2020",
             "Monday, 13 January 2020 - Monday, 27 January 2020",
             "Saturday, 4 April 2020",
@@ -170,3 +170,4 @@
       
       }
     ]
+  }

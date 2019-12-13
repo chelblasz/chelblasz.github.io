@@ -4,68 +4,178 @@
     temple closure schedule (from a JSON source), and summary—current weather 
     information obtained from a third party API.  -->
 
-    <!DOCTYPE html>
-      <html lang="en">
-      
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <title>Temple inn and suites</title>
-          <link rel="stylesheet" href="styles/normalize.css">
-          <link rel="stylesheet" href="styles/main.css">
-          <link rel="shortcut icon" href="images/templeicon.jpg" type="image/x-icon">
-      
-      </head>
-      
-      <body>
-      
-          <header>
-              <div class="background"></div>
-              <nav>
-                  <ul class="navigation">
-                        <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
-                      <li><a href="../templepage/index.html">Home Page</a></li>
-                      <li><a href="../templepage/temples.html">Temples</a></li>
-                      <li><a href="../templepage/reservations.html">Reservations</a></li>
-                      <li><a href="../templepage/services.html">Services</a></li>
-                      <li><a href="../templepage/contact.html">Contact</a></li>
-                  </ul>
-              </nav>
-          </header>
-      <div class="background2"></div>
-          <main>
-                <div id=weatherSummary>
-                        <h3 id="summary">Weather Summary</h3>
-                        <p>
-                            <span>Current Temperature: </span>
-                            <span id="currentTemp"></span>
-                        </p>
-                        <p>
-                            <span>High Temp of: </span>
-                            <span id="tempHigh"></span>
-                        </p>
-                        <p>
-                            <span>Windchill: </span>
-                            <span id="windChill"></span>
-                        </p>
-                        <p>
-                            <span>Wind Speed: </span>
-                            <span id="windSpeed"></span>
-                        </p>
-                    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-          </main>
-      
-          <div class="background3">
-                <footer>
-                    <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
-                    <p> <span id="currentDate"></span></p>
-                </footer>
-            </div>
-      
-          <script src="scripts/menu.js"></script>
-          <script src="scripts/maindate.js"></script>
-      </body>
-      
-      </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple inn and suites</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/templeicon.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="background"></div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="../templepage/index.html">Home Page</a></li>
+                <li><a href="../templepage/temples.html">Temples</a></li>
+                <li><a href="../templepage/reservations.html">Reservations</a></li>
+                <li><a href="../templepage/services.html">Services</a></li>
+                <li><a href="../templepage/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background2"></div>
+    <main class="templePage">
+        <section class="grid">
+
+            <article class="articleTemples">
+                <h1>Payson Utah Temple</h1>
+                <p>
+                    <img class="templeImg" src="" alt="Payson Utah Temple" id="paysonUtahTempleImg">
+                </p>
+                <p>
+                    Address:
+                    <span id="paysonUtahTempleAddress"></span>
+                </p>
+                <p>
+                    Telephone Number:
+                    <span id="paysonUtahTempleNumber"></span>
+                </p>
+                <p>
+                    Services:
+                    <span id="paysonUtahTempleServices"></span>
+                </p>
+                <p>
+                    Ordinance Schedule:
+                    <span id="paysonUtahTempleOrdinace"></span>
+                </p>
+                <p>
+                    Temple Closures 2020:
+                    <span id="paysonUtahTempleClosure"></span>
+                </p>
+                <p>
+                    History:
+                    <span id="paysonUtahTempleHistory"></span>
+                </p>
+
+            </article>
+            <article class="articleTemples">
+                <h1>Mérida Mexico Temple</h1>
+                <p>
+                    <img class="templeImg" src="" alt="Mérida Mexico Temple" id="méridaMexicoTempleImg">
+                </p>
+                <p>
+                    Address:
+                    <span id="méridaMexicoTempleAddress"></span>
+                </p>
+                <p>
+                    Telephone Number:
+                    <span id="méridaMexicoTempleNumber"></span>
+                </p>
+                <p>
+                    Services:
+                    <span id="méridaMexicoTempleServices"></span>
+                </p>
+                <p>
+                    Ordinance Schedule:
+                    <span id="méridaMexicoTempleOrdinace"></span>
+                </p>
+                <p>
+                    Temple Closures 2020:
+                    <span id="méridaMexicoTempleClosure"></span>
+                </p>
+                <p>
+                    History:
+                    <span id="méridaMexicoTempleHistory"></span>
+                </p>
+            </article>
+
+            <article class="articleTemples">
+                <h1>Bern Switzerland Temple</h1>
+                <p>
+                    <img class="templeImg" src="" alt="Bern Switzerland Temple" id="bernSwitzerlandTempleImg">
+                </p>
+                <p>
+                    Address:
+                    <span id="bernSwitzerlandTempleAddress"></span>
+                </p>
+
+                <p>
+                    Telephone Number:
+                    <span id="bernSwitzerlandTempleNumber"></span>
+                </p>
+                <p>
+                    Services:
+                    <span id="bernSwitzerlandTempleServices"></span>
+                </p>
+                <p>
+                    Ordinance Schedule:
+                    <span id="bernSwitzerlandTempleOrdinace"></span>
+                </p>
+                <p>
+                    Temple Closures 2020:
+                    <span id="bernSwitzerlandTempleClosure"></span>
+                </p>
+                <p>
+                    History:
+                    <span id="bernSwitzerlandTempleHistory"></span>
+                </p>
+            </article>
+
+            <article class="articleTemples">
+                <h1>Cardston Alberta Temple</h1>
+                <p>
+                    <img class="templeImg" src="" alt="Cardston Alberta Temple" id="cardstonAlbertaTempleImg">
+                </p>
+                <p>
+                    Address:
+                    <span id="cardstonAlbertaTempleAddress"></span>
+                </p>
+                <p>
+                    Telephone Number:
+                    <span id="cardstonAlbertaTempleNumber"></span>
+                </p>
+                <p>
+                    Services:
+                    <span id="cardstonAlbertaTempleServices"></span>
+                </p>
+                <p>
+                    Ordinance Schedule:
+                    <span id="cardstonAlbertaTempleOrdinace"></span>
+                </p>
+                <p>
+                    Temple Closures 2020:
+                    <span id="cardstonAlbertaTempleClosure"></span>
+                </p>
+                <p>
+                    History:
+                    <span id="cardstonAlbertaTempleHistory"></span>
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <div class="background3">
+        <footer>
+            <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
+            <p> <span id="currentDate"></span></p>
+        </footer>
+    </div>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/maindate.js"></script>
+    <script src="scripts/temple.js"></script>
+</body>
+
+</html>

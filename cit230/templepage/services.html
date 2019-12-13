@@ -27,7 +27,7 @@ with a simple Contact Us form for more details.  -->
         <div class="background"></div>
         <nav>
             <ul class="navigation">
-                    <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
                 <li><a href="../templepage/index.html">Home Page</a></li>
                 <li><a href="../templepage/temples.html">Temples</a></li>
                 <li><a href="../templepage/reservations.html">Reservations</a></li>
@@ -38,33 +38,36 @@ with a simple Contact Us form for more details.  -->
     </header>
     <main>
         <div class="background2"></div>
+
         <ul class="tabs" role="tablist">
-            <li>
+            <li class=".li-class">
                 <input type="radio" name="tabs" id="tab1" checked />
-                <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Reception
-                    Reservation</label>
+                <label class="service-reservation" for="tab1" role="tab" aria-selected="true" aria-controls="panel1"
+                    tabindex="0">Reception
+                    nn Reservation</label>
                 <div id="tab-content1" class="tab-content" role="tabpanel" aria-labelledby="description"
                     aria-hidden="false">
+
                     <section id="formSection">
                         <div>
-                            <label for="fullName">Full Name:</label>
+                            <label class="service-tabs" for="fullName">Full Name:</label>
                             <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
                         </div>
                         <div>
-                            <label for="email">Enter Your Email:</label>
+                            <label class="service-tabs" for="email">Enter Your Email:</label>
                             <input type="email" id="email" name="email" placeholder="myemail@email.com" required>
                         </div>
                         <div>
-                            <label for="number">Enter Your Phone Number:</label>
+                            <label class="service-tabs" for="number">Enter Your Phone Number:</label>
                             <input type="tel" id="number" name="number" required>
                         </div>
                         <div>
-                            <label for="recepDate">Enter Your Reception Date:</label>
+                            <label class="service-tabs" for="recepDate">Enter Your Reception Date:</label>
                             <input type="date" id="recepDate" name="recepDate" required>
                         </div>
 
                         <div>
-                            <label for="catering">Catering:</label>
+                            <label class="service-tabs" for="catering">Catering:</label>
                             <input list="catering">
                             <datalist id="catering">
                                 <option value="Mexican Mini Tacos">
@@ -75,22 +78,23 @@ with a simple Contact Us form for more details.  -->
                                 <option value="NONE N/A">
                             </datalist>
                         </div>
-                        <section id="setUp">
-                            <label class="setUp">Will we be providing set up and take down?</label>
-                            <div class="radioBox">
-                                <label class="container">Yes
-                                    <input type="radio" checked="checked" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">No
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </section>
+                        <!-- <section id="setUp"> -->
+                        <div class="radioBox">
+                            <label class="service-tabs">Will we be providing set up and take down?</label>
+
+                            <label class="container">Yes
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">No
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
 
                         <div>
-                            <div> <label class="alignmentCom" for="setUp">Comments:</label></div>
+                            <div> <label class="service-tabs" for="setUp">Comments:</label></div>
                             <div><textarea name="comments" id="comments" cols="60" rows="10"></textarea></div>
                         </div>
 
@@ -99,12 +103,14 @@ with a simple Contact Us form for more details.  -->
                             <input type="submit" id="submit" name="submit">
 
                         </div>
+                    </section>
                 </div>
             </li>
 
             <li>
                 <input type="radio" name="tabs" id="tab2" />
-                <label for="tab2" role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">Full-time
+                <label class="service-reservation" for="tab2" role="tab" aria-selected="false" aria-controls="panel2"
+                    tabindex="0">Full-time
                     Missionaries</label>
                 <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="specification"
                     aria-hidden="true">
@@ -115,20 +121,20 @@ with a simple Contact Us form for more details.  -->
                         <img class="hotel" src="../templepage/images/hotel5.jpg" alt="hotelRm4">
                     </div>
                     <div>
-                        <label for="fullName">Full Name:</label>
+                        <label class="service-tabs" for="fullName">Full Name:</label>
                         <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
                     </div>
                     <div>
-                        <label for="email">Enter Your Email:</label>
+                        <label class="service-tabs" for="email">Enter Your Email:</label>
                         <input type="email" id="email" name="email" placeholder="myemail@email.com" required>
                     </div>
                     <div>
-                        <label for="number">Enter Your Phone Number:</label>
+                        <label class="service-tabs" for="number">Enter Your Phone Number:</label>
                         <input type="tel" id="number" name="number" required>
                     </div>
 
                     <div>
-                        <div> <label class="alignmentCom" for="setUp">Comments and questions:</label></div>
+                        <div> <label class="service-tabs" for="setUp">Comments and questions:</label></div>
                         <div><textarea name="comments" id="comments" cols="60" rows="10"></textarea></div>
                     </div>
                     <div>
@@ -141,11 +147,11 @@ with a simple Contact Us form for more details.  -->
     </main>
 
     <div class="background3">
-            <footer>
-                <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
-                <p> <span id="currentDate"></span></p>
-            </footer>
-        </div>
+        <footer>
+            <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
+            <p> <span id="currentDate"></span></p>
+        </footer>
+    </div>
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/maindate.js"></script>
