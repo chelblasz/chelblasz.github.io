@@ -82,7 +82,7 @@ img.logo {
     top: 20px;
     left: 20px;
     border-radius: 15px 15px;
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .call-action {
@@ -304,9 +304,6 @@ label {
     display: block;
 }
 
-a:hover {
-    background-color: darken(tabs-base-color, 20);
-}
 /* special services tab*/
 .special-services {
     text-align: justify;
