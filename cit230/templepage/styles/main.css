@@ -400,7 +400,7 @@ label {
 .grid {
     display: grid;
     text-align: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .articleTemples {
@@ -548,6 +548,8 @@ a {
     }
 
     /*___________________________M_______Main Body Content_____________________________ */
+    
+    
     .call-action h2 {
         font-size: 20px;
     }
@@ -604,6 +606,10 @@ a {
 .hotel {
         max-width: 600px;
     }
+ /* temples page L___________________________*/
+.grid {
+    grid-template-columns: 1fr 1fr;
+}   
 
 }
 
