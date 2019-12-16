@@ -7,7 +7,7 @@ body {
 
 .background {
     background-image: url('../images/payson.jpg');
-    min-height: 650px;
+    min-height: 600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
