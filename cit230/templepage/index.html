@@ -19,7 +19,7 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
-                <li><a href="../templepage/index.html">Home Page</a></li>
+                <li><a href="#active">Home Page</a></li>
                 <li><a href="../templepage/temples.html">Temples</a></li>
                 <li><a href="../templepage/reservations.html">Reservations</a></li>
                 <li><a href="../templepage/services.html">Services</a></li>
@@ -48,24 +48,66 @@
         </section>
 
         <article class="amenities_box">
-            <p>Free Amenities</p>
+            <h2>Free Amenities</h2>
             <section class="amenities">
-                <img class="icon" src="images/icon1.PNG" alt="breakfast">
-                <img class="icon" src="images/icon2.PNG" alt="exercise">
-                <img class="icon" src="images/icon3.PNG" alt="pool">
-                <img class="icon" src="images/icon4.PNG" alt="wifi">
-                <img class="icon" src="images/icon5.PNG" alt="parking">
-                <img class="icon" src="images/icon6.PNG" alt="shuttle">
-                <img class="icon" src="images/icon7.PNG" alt="family">
-                <img class="icon" src="images/icon8.PNG" alt="family">
+                <div class="amenities-div">
+                    <p>Hot Breakfast</p>
+                    <img class="icon" src="images/icon1.PNG" alt="breakfast">
+                </div>
+                <div class="amenities-div">
+                    <p>24-hour Gym</p>
+                    <img class="icon" src="images/icon2.PNG" alt="exercise">
+                </div>
+                <div class="amenities-div">
+                    <p>Indoor Pool</p>
+                    <img class="icon" src="images/icon3.PNG" alt="pool">
+                </div>
+                <div class="amenities-div">
+                    <p>WIFI</p>
+                    <img class="icon" src="images/icon4.PNG" alt="wifi">
+                </div>
+                <div class="amenities-div">
+                    <p>Covered Parking</p>
+                    <img class="icon" src="images/icon5.PNG" alt="parking">
+                </div>
+                <div class="amenities-div">
+                    <p>Temple Shuttle</p>
+                    <img class="icon" src="images/icon6.PNG" alt="shuttle">
+                </div>
+                <div class="amenities-div">
+                    <p>Ancestry Consultant</p>
+                    <img class="icon" src="images/icon7.PNG" alt="family">
+                </div>
+                <div class="amenities-div">
+                    <p>Air Conditioned</p>
+                    <img class="icon" src="images/icon8.PNG" alt="family">
+                </div>
             </section>
         </article>
 
     </main>
-    <div class="background3">
+    <div class="footer">
         <footer>
-            <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
-            <p> <span id="currentDate"></span></p>
+
+            <div class="col-1">
+                <a class="footer_link" href="../templepage/contact.html">Contact Us</a>
+            </div>
+
+            <div class="row-2">
+                <a class="footer_link" href="../templepage/services.html">Services We Offer</a>
+            </div>
+
+            <div class="col-2">
+                <a class="footer_link" href="../templepage/temples.html">Temple Locations</a>
+            </div>
+
+            <div class="row-two">
+                <a class="footer_link" href="../templepage/reservations.html">Make a Reservation</a>
+            </div>
+
+            <p id="templeLink" class="footer_date"><a href="../templepage/index.html">&copy; Temple Inn & Suites</a>
+                </pclass="footer_date">
+                <p class="footer_date"> <span id="currentDate"></span></p>
         </footer>
     </div>
 

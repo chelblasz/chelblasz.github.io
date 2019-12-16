@@ -31,7 +31,7 @@ with a simple Contact Us form for more details.  -->
                 <li><a href="../templepage/index.html">Home Page</a></li>
                 <li><a href="../templepage/temples.html">Temples</a></li>
                 <li><a href="../templepage/reservations.html">Reservations</a></li>
-                <li><a href="../templepage/services.html">Services</a></li>
+                <li><a href="#active">Services</a></li>
                 <li><a href="../templepage/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -40,12 +40,28 @@ with a simple Contact Us form for more details.  -->
         <div class="background2"></div>
 
         <ul class="tabs" role="tablist">
+            <li>
+                <input type="radio" name="tabs" id="tab1" />
+                <label class="service-reservation" for="tab1" role="tab" aria-selected="false" aria-controls="panel1"
+                    tabindex="0">Special Services</label>
+                    <div id="tab-content1" class="tab-content" role="tabpanel" aria-labelledby="description"
+                    aria-hidden="false">
+                    <section class="special-services">
+                        <div><span>&#8226;</span> Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</div>
+                        <div><span>&#8226;</span> A playroom and low-cost, short-term babysitting services for the children of patrons</div>
+                        <div><span>&#8226;</span> Long-term stay accommodations in kitchenette suites for full-time temple missionaries</div>
+                        <div><span>&#8226;</span> Long-term stay accommodations in kitchenette suites for full-time temple missionaries</div>
+                        <div><span>&#8226;</span> Temple history themed reception and sitting area</div>
+                        <div><span>&#8226;</span> A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</div>
+                        <div><span>&#8226;</span> A family search center that supports family search and ordinance work</div>
+                    </section>
+                    </div>
+            </li>      
             <li class=".li-class">
-                <input type="radio" name="tabs" id="tab1" checked />
-                <label class="service-reservation" for="tab1" role="tab" aria-selected="true" aria-controls="panel1"
-                    tabindex="0">Reception
-                    nn Reservation</label>
-                <div id="tab-content1" class="tab-content" role="tabpanel" aria-labelledby="description"
+                <input type="radio" name="tabs" id="tab2" checked />
+                <label class="service-reservation" for="tab2" role="tab" aria-selected="true" aria-controls="panel2"
+                    index="0">Reception Reservation</label>
+                <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="description"
                     aria-hidden="false">
 
                     <section id="formSection">
@@ -95,7 +111,7 @@ with a simple Contact Us form for more details.  -->
 
                         <div>
                             <div> <label class="service-tabs" for="setUp">Comments:</label></div>
-                            <div><textarea name="comments" id="comments" cols="60" rows="10"></textarea></div>
+                            <div><textarea name="comments" id="comments" cols="42" rows="10"></textarea></div>
                         </div>
 
                         <div>
@@ -108,18 +124,19 @@ with a simple Contact Us form for more details.  -->
             </li>
 
             <li>
-                <input type="radio" name="tabs" id="tab2" />
-                <label class="service-reservation" for="tab2" role="tab" aria-selected="false" aria-controls="panel2"
+                <input type="radio" name="tabs" id="tab3" />
+                <label class="service-reservation" for="tab3" role="tab" aria-selected="false" aria-controls="panel3"
                     tabindex="0">Full-time
                     Missionaries</label>
-                <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="specification"
+                    
+                <div id="tab-content3" class="tab-content" role="tabpanel" aria-labelledby="specification"
                     aria-hidden="true">
-                    <div class="hotel">
+                    <section class="hotel">
                         <img class="hotel" src="../templepage/images/hotel1.jpg" alt="hotelRm1">
                         <img class="hotel" src="../templepage/images/hotel2.jpg" alt="hotelRm2">
                         <img class="hotel" src="../templepage/images/hotel4.jpg" alt="hotelRm3">
                         <img class="hotel" src="../templepage/images/hotel5.jpg" alt="hotelRm4">
-                    </div>
+                    </section>
                     <div>
                         <label class="service-tabs" for="fullName">Full Name:</label>
                         <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ] {3, }" required>
@@ -146,12 +163,29 @@ with a simple Contact Us form for more details.  -->
         </ul>
     </main>
 
-    <div class="background3">
+    <!-- <div class="footer1">
         <footer>
-            <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
-            <p> <span id="currentDate"></span></p>
+
+        <div class="col-1">
+            <a class="footer_link" href="../templepage/contact.html">Contact Us</a>
+        </div>  
+
+        <div class="row-2"> 
+            <a class="footer_link" href="../templepage/services.html">Services We Offer</a>
+        </div> 
+
+        <div class="col-2">
+            <a class="footer_link" href="../templepage/temples.html">Temple Locations</a>
+        </div>
+        
+        <div class="row-two">   
+            <a class="footer_link" href="../templepage/reservations.html">Make a Reservation</a>
+        </div> 
+   
+        <p id="templeLink" class="footer_date"><a href="../templepage/index.html">&copy; Temple Inn & Suites</a></pclass="footer_date">
+        <p class="footer_date"> <span id="currentDate"></span></p>
         </footer>
-    </div>
+    </div> -->
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/maindate.js"></script>

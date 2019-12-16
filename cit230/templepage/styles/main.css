@@ -7,7 +7,7 @@ body {
 
 .background {
     background-image: url('../images/payson.jpg');
-    min-height: 680px;
+    min-height: 650px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,19 +36,14 @@ nav {
 }
 
 .navigation {
-    display: flex;
-    justify-content: center;
-    align-content: center;
     list-style: none;
     text-align: center;
     padding: 0;
 }
 
 .navigation li:first-child {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    font-size: 24px;
+    display: block;
+    /* font-size: 24px; */
 }
 
 .navigation li {
@@ -56,22 +51,27 @@ nav {
 }
 
 .navigation a {
+    display: block;
     color: white;
-    /* padding: 0.75rem; */
+    padding: 0.75rem;
     text-align: center;
     text-decoration: none;
 }
 
 .navigation a:hover {
-    color: black;
-    background-color: white;
-    padding: 40px;
+    color: white;
+    background-color: rgb(71, 18, 78);
+    /* border-radius: 10px 10px; */
     font-weight: 700;
     font-size: 20px;
 }
 
+#active {
+    color:rgb(71, 18, 78);
+}
+
 .responsive li {
-    display: block;
+   display: block;
 }
 
 /*__________________S__Main Body Content__________________________________ */
@@ -191,7 +191,7 @@ nav {
     justify-items: center;
 }
 
-.amenities_box p {
+.amenities_box h2 {
     font-size: 24px;
     margin: 40px;
     display: flex;
@@ -200,6 +200,9 @@ nav {
     align-content: center;
 }
 
+.amenities-div {
+    text-align: center;
+}
 .icon {
     max-width: 90px;
     border-radius: 15%;
@@ -228,14 +231,13 @@ nav {
 }
 
 .tabs {
-    width: 450px;
     background: #ffffff;
     float: none;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin: 80px 0 0 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .li-class {
@@ -247,6 +249,7 @@ input[type="radio"] {
     position: absolute;
     top: 0;
     left: -9999px;
+    max-width: 100px;
 }
 
 label {
@@ -254,65 +257,58 @@ label {
     padding: 14px 21px;
     border-radius: 2px 2px 0 0;
     font-size: 20px;
+    margin: 10px 0;
     font-weight: normal;
-    background: #ffffff;
+    background: #000000;
+    color: white;
     cursor: pointer;
     position: relative;
-    /* transition: background-color 0.5s ease; */
+    border: black solid;
+    max-width: 500px;
 }
 
-label:hover {
-    background: #eaff7093;
+.service-reservation:hover {
+    background: #ffffff;
+    color: rgb(78, 8, 92);
 }
 
-a:active {
-    background-color: #ffe8a9;
+.tabs:active {
+    background: #ffffff;
+    color: rgb(78, 8, 92);
 }
 
 .tab-content {
-    z-index: 2;
     display: none;
     overflow: hidden;
-    width: 190%;
+    width: 80%;
+    text-align: -webkit-center;
     font-size: 17px;
     line-height: 25px;
     padding: 25px;
     position: absolute;
-    /* top: 53px; */
     left: 0;
-    background: #fff2b793;
+    background: #ffffff;
+    margin: 40px;
+    border: black solid;
 }
-
-/* The Magic */
-
-/* [id^="tab"]:checked+label {
-    top: 0;
-    padding-top: 17px;
-    background: darken;
-} */
 
 [id^="tab"]:checked~[id^="tab-content"] {
     display: block;
 }
 
-/* a {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    padding: 5px 10px;
-    margin: 0 5px;
-    background-color: #fff4d2;
-    border-radius: 10px;
-    transition: background-color 0.2s ease;
-} */
-
 a:hover {
     background-color: darken(tabs-base-color, 20);
 }
+/* special services tab*/
+.special-services {
+    text-align: justify;
+    margin: 10px;
+    line-height: 40px;
+}
 
 .hotel {
-    max-width: 400px;
+    margin: 10px;
+    max-width: 300px;
 }
 
 /* Hide the browser's default radio button */
@@ -367,6 +363,26 @@ a:hover {
     background: rgb(0, 0, 0);
 }
 
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 100px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer1_link {
+    grid-column-gap: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer1_date {
+    color: white;
+    padding-left: 10px;
+}
 /*_________________S_______________ END OF SERVICES PAGE________________________ */
 
 /* _________________s_________TEMPLES PAGE_______________________ */
@@ -397,8 +413,10 @@ a:hover {
 /*________________S______ end of Temples page______________________ */
 /* _______________S_________RESERVATIONS PAGE_______________________ */
 #reservationForm {
-    /* display: flex;
-    justify-content: center  */
+   display: flex;
+   justify-content: center;
+    /* text-align: -webkit-center; */
+
 }
 
 
@@ -455,41 +473,47 @@ a:hover {
     list-style: none;
     color: white;
 }
+
 .emailInfo a:hover {
     color: rgb(255, 0, 0);
 }
-/* .emailInfo a:visited {
-    color: rgb(58, 216, 255);
-} */
 
 
 
 /* _________________S__________footer______________________________________ */
-.background3 {
+footer {
     background-color: black;
+    box-shadow: 11px black;
+    margin-top: 50px;
     min-height: 70px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 17px; 
 }
 
 .footer_link {
-    background-color: black;
+    grid-column-gap: 50px;
+    text-decoration: none;
     color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
-footer p {
+.footer_date {
     color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
+a {
+    text-decoration: none; 
+    color: white;
+}
+
+.footer_link:hover {
+    color: red;
+}
 
 
 /*MEDIUM ______________________________________________________________________________________________________ */
@@ -543,8 +567,7 @@ footer p {
     .amenities {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
-
+/*_______________M____________SERVICES PAGE */
 
 }
 
@@ -565,8 +588,13 @@ footer p {
     .amenities {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+    
+/*_______________M____________SERVICES PAGE */
 
-    ;
+
+.hotel {
+        max-width: 600px;
+    }
+
 }
 
-/* _________________L_________End Of HOME PAGE____________________________________ */

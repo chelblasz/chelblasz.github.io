@@ -27,7 +27,7 @@
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
                 <li><a href="../templepage/index.html">Home Page</a></li>
-                <li><a href="../templepage/temples.html">Temples</a></li>
+                <li><a href="#active">Temples</a></li>
                 <li><a href="../templepage/reservations.html">Reservations</a></li>
                 <li><a href="../templepage/services.html">Services</a></li>
                 <li><a href="../templepage/contact.html">Contact</a></li>
@@ -165,17 +165,29 @@
         </section>
 
     </main>
-
-    <div class="background3">
+    
+    <div class="footer">
         <footer>
-            <a class="footer_link" href="../templepage/index.html">&copy; Temple Inn & Suites</a>
-            <p> <span id="currentDate"></span></p>
+
+        <div class="col-1">
+            <a class="footer_link" href="../templepage/contact.html">Contact Us</a>
+        </div>  
+
+        <div class="row-2"> 
+            <a class="footer_link" href="../templepage/services.html">Services We Offer</a>
+        </div> 
+
+        <div class="col-2">
+            <a class="footer_link" href="../templepage/temples.html">Temple Locations</a>
+        </div>
+        
+        <div class="row-two">   
+            <a class="footer_link" href="../templepage/reservations.html">Make a Reservation</a>
+        </div> 
+   
+        <p id="templeLink" class="footer_date"><a href="../templepage/index.html">&copy; Temple Inn & Suites</a></pclass="footer_date">
+        <p class="footer_date"> <span id="currentDate"></span></p>
         </footer>
     </div>
-
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/maindate.js"></script>
-    <script src="scripts/temple.js"></script>
-</body>
 
 </html>

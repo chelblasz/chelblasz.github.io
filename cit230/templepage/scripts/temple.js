@@ -1,4 +1,3 @@
-// fetch('json/temples.json')
 const requestURL = 'json/temples.json';
 
 fetch(requestURL)
