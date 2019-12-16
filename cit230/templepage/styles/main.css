@@ -77,6 +77,14 @@ nav {
 /*__________________S__Main Body Content__________________________________ */
 
 /* __________________S_________HOME PAGE_______________________________ */
+img.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 15px 15px;
+    max-width: 200px;
+}
+
 .call-action {
     margin-top: 100px;
     display: flex;
@@ -404,10 +412,14 @@ a:hover {
     margin: 30px;
     box-shadow: 0px -1px 11px black;
     font-weight: -10;
+    padding:50px;
 }
 
 .templeImg {
     width: 300px;
+}
+#paysonUtahTempleServices {
+    text-align: justify;
 }
 
 /*________________S______ end of Temples page______________________ */
