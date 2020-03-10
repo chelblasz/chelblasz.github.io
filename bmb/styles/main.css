@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga&display=swap');
+
+body {
+    font-family: 'Calistoga', cursive;
+    background-color: rgb(255, 255, 255);
+}
+
+.background {
+    background-image: url('../images/BMBICON.PNG');
+    /* max-height: 100px; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+.background2 {
+    background-image: url('../images/Human_Body-Muscular.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* __________________________Header__________________________________*/
+
+/* _____________________________S__NAV_______________________________ */
+
+/* _____________________________S__NAV________________________________ */
+
+nav {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: rgb(17, 18, 20);
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+    /* font-size: 24px; */
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: rgb(71, 18, 78);
+    /* border-radius: 10px 10px; */
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#active {
+    color:rgb(71, 18, 78);
+}
+
+.responsive li {
+   display: block;
+}
+
+/*__________________S__Main Body Content__________________________________ */
+
+/* __________________S_________HOME PAGE_______________________________ */
+img.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 15px 15px;
+    max-width: 100px;
+}
+
+.call-action {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 0 10px 10px 5px;
+    text-align: center;
+}
+
+.call-action h2 {
+    display: flex;
+    margin-top: 0;
+    color: #000000;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+.room-action {
+    margin-left: 30px;
+    display: flex;
+    align-items: inherit;
+    flex-direction: column;
+}
+
+.hotel-room {
+    max-width: 250px;
+    margin: 10px;
+}
+
+.book-button {
+    margin: 20px;
+    max-width: 200px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.book-button:hover {
+    background: rgb(170, 76, 14);
+}
+
+/* Second call to explore option */
+.call-action2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 0 10px 10px 5px;
+    text-align: center;
+}
+
+.call-action2 h2 {
+    display: flex;
+    margin-top: 0;
+    color: #000000;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+.room-action2 {
+    margin-right: 30px;
+    display: flex;
+    align-items: inherit;
+    flex-direction: column;
+}
+
+.hotel-room2 {
+    max-width: 250px;
+    margin: 10px;
+}
+
+.search-button {
+    margin: 20px;
+    max-width: 200px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: black;
+}
+
+.search-button a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.search-button:hover {
+    background: rgb(170, 76, 14);
+}
+
+.amenities_box {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 50px;
+}
+
+.amenities {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.amenities_box h2 {
+    font-size: 24px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.amenities-div {
+    text-align: center;
+}
+.icon {
+    max-width: 90px;
+    border-radius: 15%;
+    margin: 5px;
+}
+
+/* ______________S____________End Of HOME PAGE____________________________________ */
+
+/* _______________S_____________SERVICES PAGE________________________ */
+
+/*_____S_______ The Service Tabs___________ */
+
+/* h1 {
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    float: left;
+    margin: 20px 0 100px 10px;
+} */
+
+.checkmark {
+    font-size: 13px;
+    display: block;
+    padding-left: 4px;
+}
+
+.tabs {
+    background: #ffffff;
+    float: none;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    margin: 80px 0 0 10px;
+    text-align: center;
+}
+
+.li-class {
+    float: left;
+    display: block;
+}
+
+input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    max-width: 100px;
+}
+
+label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: normal;
+    background: #000000;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    border: black solid;
+    max-width: 500px;
+}
+
+.service-reservation:hover {
+    background: #ffffff;
+    color: rgb(78, 8, 92);
+}
+
+.tabs:active {
+    background: #ffffff;
+    color: rgb(78, 8, 92);
+}
+
+.tab-content {
+    display: none;
+    overflow: hidden;
+    width: 80%;
+    text-align: -webkit-center;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    margin: 40px;
+    border: black solid;
+}
+
+[id^="tab"]:checked~[id^="tab-content"] {
+    display: block;
+}
+
+/* special services tab*/
+.special-services {
+    text-align: justify;
+    margin: 10px;
+    line-height: 40px;
+}
+
+.hotel {
+    margin: 10px;
+    max-width: 300px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 14px;
+    width: 10px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+}
+
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 100px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer1_link {
+    grid-column-gap: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer1_date {
+    color: white;
+    padding-left: 10px;
+}
+/*_________________S_______________ END OF SERVICES PAGE________________________ */
+
+/* _________________s_________TEMPLES PAGE_______________________ */
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+
+.templePage {
+    font-family: 'Gelasio', serif;
+}
+
+.grid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+
+.articleTemples {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin: 30px;
+    box-shadow: 0px -1px 11px black;
+    font-weight: -10;
+    padding:50px;
+}
+
+.templeImg {
+    width: 300px;
+}
+#paysonUtahTempleServices {
+    text-align: justify;
+}
+
+/*________________S______ end of Temples page______________________ */
+/* _______________S_________RESERVATIONS PAGE_______________________ */
+#reservationForm {
+   display: flex;
+   justify-content: center;
+    /* text-align: -webkit-center; */
+
+}
+
+
+
+/* _______________s_________CONTACT PAGE________________________ */
+
+/* contact form */
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+
+.contactPage {
+    font-family: 'Gelasio', serif;
+}
+
+.contact-form {
+    background: rgb(0, 0, 0);
+    color: white;
+    margin: 50px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px -1px 11px black;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.contact-label {
+    background: black;
+    color: white;
+}
+
+/* contact information for Temple Inn and Suites */
+.contact-us h2 {
+    padding: 20px;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    margin: 50px;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    box-shadow: 0px -1px 11px black;
+}
+
+.emailInfo a {
+    list-style: none;
+    color: white;
+}
+
+.emailInfo a:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+
+/* _________________S__________footer______________________________________ */
+footer {
+    background-color: black;
+    box-shadow: 11px black;
+    margin-top: 50px;
+    min-height: 70px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 17px; 
+}
+
+.footer_link {
+    grid-column-gap: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer_date {
+    color: white;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none; 
+    color: white;
+}
+
+.footer_link:hover {
+    color: red;
+}
+
+
+/*MEDIUM ______________________________________________________________________________________________________ */
+
+@media screen and (min-width: 32.5em) {
+
+    /*_________________________M_____Header________________________________________ */
+    .background {
+        min-height: 665px;
+    }
+
+
+    /* ________________________M______NAV__________________________________________ */
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /*___________________________M_______Main Body Content_____________________________ */
+    
+    
+    .call-action h2 {
+        font-size: 20px;
+    }
+
+    .hotel-room {
+        max-width: 300px;
+    }
+
+    .book-button {
+        margin: 40px;
+        font-size: 18px;
+    }
+
+    .call-action2 h2 {
+        font-size: 20px;
+    }
+
+    .hotel-room2 {
+        max-width: 300px;
+    }
+
+    .search-button {
+        font-size: 20px;
+    }
+
+    .amenities {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+/*_______________M____________SERVICES PAGE */
+
+}
+
+/* ___________________________LARGE SCREEN___________________________________ */
+@media screen and (min-width: 60em) {
+
+    /* __________________L_________HOME PAGE_______________________________ */
+
+
+    .hotel-room {
+        max-width: 500px;
+    }
+
+    .hotel-room2 {
+        max-width: 500px;
+    }
+
+    .amenities {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+/*_______________M____________SERVICES PAGE */
+
+
+.hotel {
+        max-width: 600px;
+    }
+ /* temples page L___________________________*/
+.grid {
+    grid-template-columns: 1fr 1fr;
+}   
+
+}
+
